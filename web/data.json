@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-18T11:19+00:00",
+ "generated_at": "2026-10-18T11:42+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -144,7 +144,6 @@
   ]
  },
  "evidence_status": {
-  "unverified": 2,
   "corroborating": 70
  },
  "new_evidence_today": 0,
@@ -224,16 +223,6 @@
    },
    "new_papers_12m": 189,
    "evidence": [
-    {
-     "tier": "news",
-     "title": " 【 养老之难｜人才篇 】 供需失衡下的养老守门人困境 - 经济观察网 － 专业财经新闻网站",
-     "date": "20261017",
-     "source": "eeo.com.cn",
-     "domain": "eeo.com.cn",
-     "doi_or_url": "http://www.eeo.com.cn/2026/1017/1067748.shtml",
-     "problem": "elder-care",
-     "status": "unverified"
-    },
     {
      "tier": "research",
      "title": "AI‐Driven Revolution of Medical Robotics Across Surgical Innovation, Rehabilitation Intelligence, and Multimodal Healthcare Delivery",
@@ -355,7 +344,14 @@
     20,
     23
    ],
-   "indicator": null,
+   "indicator": {
+    "indicator": "SH.STA.SUIC.P5",
+    "name": "Suicide mortality rate (per 100,000 population)",
+    "year": 2021,
+    "value": 16.59,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
+   },
    "new_papers_12m": 87199,
    "evidence": [
     {
@@ -876,7 +872,14 @@
     30,
     32
    ],
-   "indicator": null,
+   "indicator": {
+    "indicator": "SE.TER.ENRR",
+    "name": "School enrollment, tertiary (% gross)",
+    "year": 2025,
+    "value": 49.0776442074561,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
+   },
    "new_papers_12m": 533,
    "evidence": [
     {
@@ -1529,19 +1532,16 @@
     30,
     30
    ],
-   "indicator": null,
+   "indicator": {
+    "indicator": "EG.IMP.CONS.ZS",
+    "name": "Energy imports, net (% of energy use)",
+    "year": 2024,
+    "value": 57.2704702560609,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
+   },
    "new_papers_12m": 6038,
    "evidence": [
-    {
-     "tier": "news",
-     "title": "أين تذهب ثروات البلاد بينما يواجه الليبيون « الجوع والفقر والغلاء »؟ ",
-     "date": "20261017",
-     "source": "libyaakhbar.com",
-     "domain": "libyaakhbar.com",
-     "doi_or_url": "https://www.libyaakhbar.com/news/2898453.html",
-     "problem": "energy-security",
-     "status": "unverified"
-    },
     {
      "tier": "research",
      "title": "The global transmission of U.S. monetary policy",
@@ -1662,7 +1662,14 @@
     9,
     13
    ],
-   "indicator": null,
+   "indicator": {
+    "indicator": "SH.MED.PHYS.ZS",
+    "name": "Physicians (per 1,000 people)",
+    "year": 2021,
+    "value": 0.541,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
+   },
    "new_papers_12m": 110,
    "evidence": [
     {
