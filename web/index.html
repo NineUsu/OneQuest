@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body>
+<title>OneQuest</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a quest board. Filters on top, the opportunity map on the left with the selected quest's dossier on the right, then the daily signal feed and the evidence check underneath, and the full ranked list last. */
+:root {
+  --bg: #f3f5f7;
+  --surface: #fcfcfb;
+  --ink: #0f1a24;
+  --ink-2: #4a5662;
+  --muted: #7f8a94;
+  --line: #dde2e7;
+  --accent: #1d4f7a;
+  --accent-soft: #e3ecf5;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a;
+  --good: #0ca30c; --warn: #fab219; --serious: #ec835a; --crit: #d03b3b;
+  --banner: #fff4d6; --banner-ink: #6b4a00;
+  --f-display: "Bai Jamjuree", "IBM Plex Sans Thai", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans Thai", "Noto Sans Thai", system-ui, sans-serif;
+  --f-data: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1216; --surface: #171c21; --ink: #eef1f4; --ink-2: #b7c0c8; --muted: #86909a; --line: #2a3138;
+    --accent: #8cb8e6; --accent-soft: #1d2a37;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+    --banner: #3a2f12; --banner-ink: #f4d58a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1216; --surface: #171c21; --ink: #eef1f4; --ink-2: #b7c0c8; --muted: #86909a; --line: #2a3138;
+  --accent: #8cb8e6; --accent-soft: #1d2a37;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+  --banner: #3a2f12; --banner-ink: #f4d58a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.55; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-block: 20px 48px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
+h1, h2, h3 { font-family: var(--f-display); margin: 0; text-wrap: balance; }
+h2 { font-size: 17px; font-weight: 600; }
+.mono { font-family: var(--f-data); font-variant-numeric: tabular-nums; }
+.label { font-size: 12px; letter-spacing: .04em; color: var(--muted); }
+
+header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; }
+.brand { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.brand h1 { font-size: 30px; font-weight: 700; letter-spacing: -.01em; }
+.brand h1 span { color: var(--accent); }
+.brand p { margin: 0; color: var(--ink-2); }
+.updated { color: var(--ink-2); font-size: 13px; }
+
+.banner { background: var(--banner); color: var(--banner-ink); border-radius: 8px; padding: 10px 14px; font-size: 14px; }
+
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.kpi { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; display: grid; gap: 2px; }
+.kpi b { font-family: var(--f-data); font-size: 26px; font-weight: 500; font-variant-numeric: tabular-nums; }
+@media (max-width: 720px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.filters { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); border-radius: 999px; padding: 4px 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.chip[aria-pressed="true"] { border-color: var(--accent); color: var(--ink); background: var(--accent-soft); }
+.chip:focus-visible, select:focus-visible, tr:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
+select { font: inherit; font-size: 13px; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+
+.main { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+.lower { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
+@media (max-width: 900px) { .main, .lower { grid-template-columns: minmax(0, 1fr); } }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; min-width: 0; }
+.panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.panel-head p { margin: 0; font-size: 13px; color: var(--ink-2); }
+#bubble { height: 470px; }
+#area { height: 240px; }
+@media (max-width: 600px) { #bubble { height: 380px; } }
+
+.dossier { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); }
+.dossier h3 { font-size: 20px; font-weight: 600; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { font-size: 12px; padding: 2px 8px; border-radius: 4px; background: var(--accent-soft); color: var(--ink-2); }
+.score-big { display: flex; align-items: baseline; gap: 8px; }
+.score-big b { font-family: var(--f-data); font-size: 36px; font-weight: 500; }
+.bars { display: grid; gap: 6px; }
+.bar { display: grid; grid-template-columns: 9.5em minmax(0, 1fr) 2.5em; gap: 8px; align-items: center; font-size: 13px; }
+.bar .track { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.bar .fill { height: 100%; background: var(--accent); border-radius: 3px; }
+.bar .v { text-align: right; font-family: var(--f-data); color: var(--ink-2); }
+.gap { display: grid; gap: 4px; font-size: 13px; }
+.gap .row { display: flex; justify-content: space-between; gap: 8px; color: var(--ink-2); }
+.gap .row b { color: var(--ink); font-family: var(--f-data); font-weight: 500; }
+.gapbar { height: 10px; border-radius: 3px; background: var(--line); position: relative; overflow: hidden; }
+.gapbar i { position: absolute; inset: 0 auto 0 0; background: var(--accent); border-radius: 3px; }
+#spark { height: 60px; }
+
+.ev { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.ev li { display: grid; gap: 4px; padding-top: 8px; border-top: 1px solid var(--line); font-size: 13px; }
+.ev .t { color: var(--ink); }
+.ev .m { color: var(--muted); font-size: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+.pill { font-size: 12px; white-space: nowrap; display: inline-flex; align-items: center; gap: 4px; color: var(--ink-2); }
+.pill .ic { width: 16px; height: 16px; border-radius: 50%; display: inline-grid; place-items: center; font-size: 10px; color: #fff; font-weight: 700; }
+
+.pipeline { display: grid; gap: 8px; }
+.stage { display: grid; grid-template-columns: 1.6em minmax(0, 1fr) auto; gap: 10px; align-items: start; font-size: 13px; }
+.stage .n { font-family: var(--f-data); color: var(--muted); }
+.stage b { display: block; font-weight: 600; color: var(--ink); font-size: 14px; }
+.stage span { color: var(--ink-2); }
+.stage .c { font-family: var(--f-data); font-size: 18px; }
+.tierline { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { font-weight: 500; color: var(--muted); font-size: 12px; }
+td.num, th.num { text-align: right; font-family: var(--f-data); font-variant-numeric: tabular-nums; }
+tbody tr { cursor: pointer; }
+tbody tr:hover, tbody tr[aria-selected="true"] { background: var(--accent-soft); }
+footer { color: var(--muted); font-size: 12px; }
+.err { padding: 24px; color: var(--ink-2); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <h1>One<span>Quest</span></h1>
+      <p>แผนที่ปัญหาและโอกาส อัปเดตทุกวัน</p>
+    </div>
+    <div class="updated" id="updated"></div>
+  </header>
+
+  <div class="banner" id="banner" hidden><b>ข้อมูลสมมติทั้งหมด</b> หน้านี้เป็น mockup ตัวเลข คะแนน และหลักฐานทุกชิ้นสร้างขึ้นเพื่อแสดงหน้าตาของระบบ ยังไม่ได้มาจากแหล่งจริง</div>
+
+  <section class="kpis" aria-label="สรุป">
+    <div class="kpi"><span class="label">ปัญหาที่ติดตาม</span><b id="k-problems">–</b></div>
+    <div class="kpi"><span class="label">หลักฐานใหม่วันนี้</span><b id="k-new">–</b></div>
+    <div class="kpi"><span class="label">รอคนตรวจสอบ</span><b id="k-pending">–</b></div>
+    <div class="kpi"><span class="label">ยืนยันแล้ว</span><b id="k-verified">–</b></div>
+  </section>
+
+  <div class="filters">
+    <div class="chips" id="cat-chips" role="group" aria-label="ประเภทช่องว่าง"></div>
+    <label class="label" for="scope">ขอบเขต
+      <select id="scope">
+        <option value="all">ทั้งหมด</option>
+        <option value="global">ระดับโลก</option>
+        <option value="regional">ระดับภูมิภาค</option>
+        <option value="national">ระดับประเทศ</option>
+        <option value="local">ระดับพื้นที่</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="main">
+    <section class="panel">
+      <div class="panel-head">
+        <h2>แผนที่โอกาส</h2>
+        <p>ขวาบน = ปัญหาใหญ่ที่ยังไม่มีใครแก้มากพอ · ขนาดฟอง = จำนวนคนที่ได้รับผลกระทบ</p>
+      </div>
+      <div id="bubble" role="img" aria-label="กราฟฟองสบู่ ขนาดปัญหาเทียบกับระดับที่ถูกละเลย"></div>
+    </section>
+
+    <aside class="panel dossier" id="dossier" aria-live="polite"></aside>
+  </div>
+
+  <div class="lower">
+    <section class="panel">
+      <div class="panel-head">
+        <h2>สัญญาณรายวัน</h2>
+        <p>ข่าว นโยบาย งานวิจัยใหม่ 30 วันล่าสุด แยกตามประเภท</p>
+      </div>
+      <div id="area" role="img" aria-label="กราฟพื้นที่ซ้อน จำนวนสัญญาณรายวัน"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>การตรวจสอบหลักฐาน</h2>
+        <p>ทุกชิ้นต้องผ่าน 4 ขั้นก่อนขึ้นสถานะยืนยันแล้ว</p>
+      </div>
+      <div class="pipeline" id="pipeline"></div>
+    </section>
+  </div>
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>อันดับโอกาส</h2>
+      <p id="weights"></p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>ปัญหา</th><th>ประเภท</th><th>พื้นที่</th><th class="num">คะแนน</th><th class="num">ขนาด</th><th class="num">ถูกละเลย</th><th class="num">แก้ได้</th><th class="num">จังหวะ</th><th class="num">คนที่กระทบ (ล้าน)</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>OneQuest mockup · ข้อมูลอ่านจาก data.json ที่สคริปต์ Python สร้างขึ้นทุกวัน</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+<script>
+(function () {
+  const CATS = {
+    supply:   { name: "ขาด supply", v: "--s1" },
+    access:   { name: "เข้าถึงไม่ได้ / แพง", v: "--s2" },
+    systemic: { name: "ความเสี่ยงเชิงระบบ", v: "--s3" }
+  };
+  const SCOPE = { global: "ระดับโลก", regional: "ภูมิภาค", national: "ประเทศ", local: "พื้นที่" };
+  const STATUS = {
+    verified:      { label: "ยืนยันแล้ว", c: "--good", ic: "✓" },
+    corroborating: { label: "มีแหล่งรองรับบางส่วน", c: "--warn", ic: "◐" },
+    unverified:    { label: "รอตรวจสอบ", c: "--muted", ic: "?" },
+    disputed:      { label: "ขัดแย้งกับแหล่งอื่น", c: "--crit", ic: "✕" }
+  };
+  const DIMS = { scale: "ขนาดปัญหา", neglect: "ถูกละเลย", tractability: "แก้ได้จริง", timing: "จังหวะเวลา (why now)" };
+
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const fmt = n => n >= 1e6 ? (n / 1e6).toFixed(1) + " ล้าน" : n >= 1e3 ? Math.round(n / 1e3).toLocaleString() + " พัน" : n.toLocaleString();
+
+  let data, bubble, area, spark, selected;
+  const state = { cats: new Set(Object.keys(CATS)), scope: "all" };
+  try { const s = JSON.parse(localStorage.getItem("oq-filters") || "null"); if (s) { state.cats = new Set(s.cats); state.scope = s.scope; } } catch (e) {}
+  const save = () => { try { localStorage.setItem("oq-filters", JSON.stringify({ cats: [...state.cats], scope: state.scope })); } catch (e) {} };
+
+  fetch("data.json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(init).catch(err => {
+    $("dossier").innerHTML = '<p class="err">โหลด data.json ไม่ได้ ถ้าเปิดไฟล์ตรงจากเครื่อง ให้รัน <code>python -m http.server</code> ในโฟลเดอร์ web ก่อน แล้วเปิด http://localhost:8000</p>';
+  });
+
+  function visible() {
+    return data.problems.filter(p => state.cats.has(p.category) && (state.scope === "all" || p.scope === state.scope));
+  }
+
+  function init(d) {
+    data = d;
+    $("banner").hidden = !d.is_sample;
+    const t = new Date(d.generated_at);
+    $("updated").innerHTML = 'อัปเดตล่าสุด <span class="mono">' + t.toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" }) + "</span>";
+    const st = d.evidence_status;
+    $("k-problems").textContent = d.problems.length;
+    $("k-new").textContent = d.new_evidence_today;
+    $("k-pending").textContent = (st.unverified || 0) + (st.corroborating || 0);
+    $("k-verified").textContent = st.verified || 0;
+    $("weights").textContent = "คะแนน = " + Object.entries(d.weights).map(([k, w]) => DIMS[k].replace(/ \(.*/, "") + " × " + w).join(" + ");
+
+    const chips = $("cat-chips");
+    chips.innerHTML = Object.entries(CATS).map(([k, c]) => '<button class="chip" id="chip-' + k + '" data-k="' + k + '" aria-pressed="' + state.cats.has(k) + '"><span class="dot" style="background:var(' + c.v + ')"></span>' + c.name + "</button>").join("");
+    chips.addEventListener("click", e => {
+      const b = e.target.closest(".chip"); if (!b) return;
+      const k = b.dataset.k;
+      if (state.cats.has(k) && state.cats.size > 1) state.cats.delete(k); else state.cats.add(k);
+      chips.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", state.cats.has(c.dataset.k)));
+      save(); render();
+    });
+    $("scope").value = state.scope;
+    $("scope").addEventListener("change", e => { state.scope = e.target.value; save(); render(); });
+
+    bubble = echarts.init($("bubble"));
+    area = echarts.init($("area"));
+    bubble.on("click", p => select(p.data.id));
+    window.addEventListener("resize", () => { bubble.resize(); area.resize(); spark && spark.resize(); });
+    matchMedia("(prefers-color-scheme: dark)").addEventListener("change", render);
+    new MutationObserver(render).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+    renderPipeline();
+    render();
+  }
+
+  function axisBase(name) {
+    return {
+      name, nameLocation: "middle", nameGap: 30, min: 0, max: 100, interval: 25,
+      nameTextStyle: { color: css("--ink-2"), fontFamily: css("--f-body") },
+      axisLine: { lineStyle: { color: css("--line") } }, axisTick: { show: false },
+      axisLabel: { color: css("--muted"), fontFamily: css("--f-data") },
+      splitLine: { lineStyle: { color: css("--line") } }
+    };
+  }
+
+  function render() {
+    const list = visible();
+    if (!selected || !list.find(p => p.id === selected)) selected = list[0] && list[0].id;
+    const surface = css("--surface");
+    const maxA = Math.max(...data.problems.map(p => p.affected_m));
+
+    bubble.setOption({
+      animationDuration: 400,
+      grid: { left: 48, right: 20, top: 16, bottom: 48 },
+      tooltip: {
+        backgroundColor: surface, borderColor: css("--line"), textStyle: { color: css("--ink"), fontFamily: css("--f-body") },
+        formatter: p => "<b>" + esc(p.data.title) + "</b><br>ขนาด " + p.data.value[0] + " · ถูกละเลย " + p.data.value[1] + "<br>กระทบ " + p.data.value[2] + " ล้านคน · คะแนน " + p.data.score
+      },
+      xAxis: axisBase("ขนาดและความรุนแรงของปัญหา →"),
+      yAxis: { ...axisBase("ถูกละเลย →"), nameGap: 32 },
+      series: Object.entries(CATS).map(([k, c]) => ({
+        name: c.name, type: "scatter",
+        data: list.filter(p => p.category === k).map(p => ({
+          id: p.id, title: p.title, score: p.score,
+          value: [p.scores.scale, p.scores.neglect, p.affected_m],
+          symbolSize: 14 + 56 * Math.sqrt(p.affected_m / maxA),
+          itemStyle: { color: css(c.v), opacity: p.id === selected ? 1 : 0.72, borderColor: p.id === selected ? css("--ink") : surface, borderWidth: 2 },
+          label: { show: true, position: "right", formatter: p.title.length > 16 ? p.title.slice(0, 15) + "…" : p.title, color: css("--ink-2"), fontSize: 11, fontFamily: css("--f-body") }
+        })),
+        labelLayout: { hideOverlap: true },
+        emphasis: { focus: "self", label: { color: css("--ink") } },
+        markArea: k === "supply" ? { silent: true, itemStyle: { color: css("--accent-soft"), opacity: 0.55 }, data: [[{ coord: [60, 60] }, { coord: [100, 100] }]], label: { show: true, position: "insideTopRight", formatter: "จุดที่น่าลงมือ", color: css("--muted"), fontSize: 11 } } : undefined
+      }))
+    }, { replaceMerge: ["series"] });
+
+    const series = Object.entries(CATS).map(([k, c]) => ({
+      name: c.name, type: "line", stack: "s", smooth: false, symbol: "none",
+      itemStyle: { color: css(c.v) }, lineStyle: { width: 2, color: css(c.v) }, areaStyle: { color: css(c.v), opacity: 0.35 },
+      data: state.cats.has(k) ? data.daily_signals[k] : data.daily_signals[k].map(() => 0)
+    }));
+    area.setOption({
+      animationDuration: 400,
+      grid: { left: 40, right: 12, top: 48, bottom: 28 },
+      legend: { top: 0, left: 0, icon: "circle", itemWidth: 10, textStyle: { color: css("--ink-2"), fontFamily: css("--f-body") } },
+      tooltip: { trigger: "axis", axisPointer: { type: "line", lineStyle: { color: css("--muted") } }, backgroundColor: surface, borderColor: css("--line"), textStyle: { color: css("--ink") } },
+      xAxis: { type: "category", data: data.dates.map(d => d.slice(5)), boundaryGap: false, axisLine: { lineStyle: { color: css("--line") } }, axisTick: { show: false }, axisLabel: { color: css("--muted"), fontFamily: css("--f-data"), interval: 6 } },
+      yAxis: { type: "value", splitLine: { lineStyle: { color: css("--line") } }, axisLabel: { color: css("--muted"), fontFamily: css("--f-data") } },
+      series
+    });
+
+    $("rows").innerHTML = list.map((p, i) => '<tr tabindex="0" data-id="' + p.id + '" aria-selected="' + (p.id === selected) + '"><td class="mono">' + (i + 1) + "</td><td>" + esc(p.title) + '</td><td><span class="dot" style="background:var(' + CATS[p.category].v + ')"></span> ' + esc(p.gap_type) + "</td><td>" + esc(p.region) + '</td><td class="num"><b>' + p.score + '</b></td><td class="num">' + p.scores.scale + '</td><td class="num">' + p.scores.neglect + '</td><td class="num">' + p.scores.tractability + '</td><td class="num">' + p.scores.timing + '</td><td class="num">' + p.affected_m + "</td></tr>").join("");
+    $("rows").onclick = e => { const r = e.target.closest("tr"); if (r) select(r.dataset.id); };
+    $("rows").onkeydown = e => { if (e.key === "Enter") { const r = e.target.closest("tr"); if (r) select(r.dataset.id); } };
+
+    renderDossier();
+  }
+
+  function select(id) { selected = id; render(); }
+
+  function statusPill(s) {
+    const m = STATUS[s];
+    return '<span class="pill"><span class="ic" style="background:var(' + m.c + ')">' + m.ic + "</span>" + m.label + "</span>";
+  }
+
+  function renderDossier() {
+    const p = data.problems.find(x => x.id === selected);
+    const el = $("dossier");
+    if (!p) { el.innerHTML = '<p class="err">ไม่มีปัญหาตรงกับตัวกรองนี้</p>'; return; }
+    const gapPct = Math.round(100 * p.supply.value / p.demand.value);
+    el.innerHTML =
+      '<div class="tags"><span class="tag"><span class="dot" style="background:var(' + CATS[p.category].v + ')"></span> ' + esc(p.gap_type) + '</span><span class="tag">' + SCOPE[p.scope] + " · " + esc(p.region) + "</span>" + p.sdg.map(s => '<span class="tag">SDG ' + s + "</span>").join("") + "</div>" +
+      "<h3>" + esc(p.title) + "</h3>" +
+      '<div class="score-big"><b>' + p.score + '</b><span class="label">คะแนนโอกาส จาก 100</span></div>' +
+      '<div class="bars">' + Object.entries(DIMS).map(([k, n]) => '<div class="bar"><span>' + n + '</span><span class="track"><span class="fill" style="display:block;width:' + p.scores[k] + '%"></span></span><span class="v">' + p.scores[k] + "</span></div>").join("") + "</div>" +
+      '<div class="gap"><span class="label">Demand เทียบ Supply</span>' +
+        '<div class="row"><span>' + esc(p.demand.label) + "</span><b>" + fmt(p.demand.value) + "</b></div>" +
+        '<div class="row"><span>' + esc(p.supply.label) + "</span><b>" + fmt(p.supply.value) + "</b></div>" +
+        '<div class="gapbar" aria-label="supply ครอบคลุม ' + gapPct + '%"><i style="width:' + gapPct + '%"></i></div>' +
+        '<div class="row"><span>supply ครอบคลุมได้ ' + gapPct + "% ขาดอีก " + fmt(p.demand.value - p.supply.value) + " " + esc(p.demand.unit) + "</span></div></div>" +
+      '<div><span class="label">สัญญาณรายวัน 30 วัน</span><div id="spark"></div></div>' +
+      '<div><span class="label">หลักฐานล่าสุด</span><ul class="ev">' + p.evidence.slice(0, 5).map(e =>
+        '<li><span class="t">' + esc(e.title) + '</span><span class="m">' + statusPill(e.status) + '<span>' + esc(data.tiers[e.tier]) + " · " + esc(e.source) + ' · <span class="mono">' + esc((e.date || "").slice(5)) + "</span>" + (e.note ? " · " + esc(e.note) : "") + "</span></span></li>").join("") + "</ul></div>";
+
+    spark && spark.dispose();
+    spark = echarts.init($("spark"));
+    const last = p.signals.length - 1;
+    spark.setOption({
+      animation: false, grid: { left: 2, right: 30, top: 8, bottom: 4 },
+      xAxis: { type: "category", show: false, data: data.dates }, yAxis: { type: "value", show: false, min: 0 },
+      tooltip: { trigger: "axis", backgroundColor: css("--surface"), borderColor: css("--line"), textStyle: { color: css("--ink") } },
+      series: [{ type: "line", data: p.signals, symbol: "none", lineStyle: { width: 2, color: css("--accent") }, areaStyle: { color: css("--accent"), opacity: 0.12 },
+        markPoint: { symbol: "circle", symbolSize: 8, itemStyle: { color: css("--accent") }, label: { show: true, position: "right", color: css("--ink-2"), fontFamily: css("--f-data"), fontSize: 11 }, data: [{ coord: [last, p.signals[last]], value: p.signals[last] }] } }]
+    });
+  }
+
+  function renderPipeline() {
+    const st = data.evidence_status;
+    const total = Object.values(st).reduce((a, b) => a + b, 0);
+    const steps = [
+      ["ดึงเข้ามา", "ข่าวจาก GDELT, งานวิจัยจาก OpenAlex, ตัวเลขจาก World Bank และ UN SDG", total, null],
+      ["ให้คะแนนแหล่ง", "งานวิจัยที่ผ่าน peer review และสถิติทางการได้น้ำหนักมากกว่าข่าวและโซเชียล", null, "tiers"],
+      ["หาแหล่งยืนยันข้าม", "ข่าวต้องมีอย่างน้อย 2 สำนักที่เป็นอิสระต่อกัน หรือตรงกับตัวเลขทางการ", (st.corroborating || 0) + (st.unverified || 0), null],
+      ["คนตรวจ", "คนอ่านหลักฐานแล้วกดยืนยันหรือแจ้งว่าขัดแย้ง ระบบไม่ยืนยันเองอัตโนมัติ", (st.verified || 0) + (st.disputed || 0), null]
+    ];
+    $("pipeline").innerHTML = steps.map((s, i) =>
+      '<div class="stage"><span class="n">' + (i + 1) + "</span><div><b>" + s[0] + "</b><span>" + s[1] + "</span>" +
+      (s[3] ? '<div class="tierline" style="margin-top:6px">' + Object.values(data.tiers).map(t => '<span class="tag">' + esc(t) + "</span>").join("") + "</div>" : "") +
+      '</div><span class="c">' + (s[2] ?? "") + "</span></div>").join("") +
+      '<div class="tierline" style="margin-top:4px">' + Object.entries(STATUS).map(([k]) => statusPill(k) + ' <span class="mono" style="font-size:12px;color:var(--ink-2)">' + (st[k] || 0) + "</span>").join("&nbsp;&nbsp;") + "</div>";
+  }
+})();
+</script>
+
+</body>
+</html>
