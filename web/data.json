@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-18T11:42+00:00",
+ "generated_at": "2026-10-19T01:03+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-09-19",
   "2026-09-20",
   "2026-09-21",
   "2026-09-22",
@@ -43,7 +42,8 @@
   "2026-10-15",
   "2026-10-16",
   "2026-10-17",
-  "2026-10-18"
+  "2026-10-18",
+  "2026-10-19"
  ],
  "daily_signals": {
   "supply": [
@@ -144,7 +144,8 @@
   ]
  },
  "evidence_status": {
-  "corroborating": 70
+  "unverified": 1,
+  "corroborating": 73
  },
  "new_evidence_today": 0,
  "problems": [
@@ -223,6 +224,16 @@
    },
    "new_papers_12m": 189,
    "evidence": [
+    {
+     "tier": "news",
+     "title": " 【 养老之难｜运营篇 】 一场  大浪淘沙  的长期战役 - 经济观察网 － 专业财经新闻网站",
+     "date": "20261018",
+     "source": "eeo.com.cn",
+     "domain": "eeo.com.cn",
+     "doi_or_url": "http://www.eeo.com.cn/2026/1018/1068216.shtml",
+     "problem": "elder-care",
+     "status": "unverified"
+    },
     {
      "tier": "research",
      "title": "AI‐Driven Revolution of Medical Robotics Across Surgical Innovation, Rehabilitation Intelligence, and Multimodal Healthcare Delivery",
@@ -352,7 +363,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 87199,
+   "new_papers_12m": 87113,
    "evidence": [
     {
      "tier": "research",
@@ -484,7 +495,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1443,
+   "new_papers_12m": 1442,
    "evidence": [
     {
      "tier": "research",
@@ -880,7 +891,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 533,
+   "new_papers_12m": 531,
    "evidence": [
     {
      "tier": "research",
@@ -890,6 +901,17 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1287/msom.2025.1065",
      "cited_by": 15,
+     "problem": "semiconductor-skills",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Adaptive and risk recovery strategies for enhancing supply chain network resilience: a cascading failure perspective",
+     "date": "2026-02-16",
+     "source": "Annals of Operations Research",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1007/s10479-026-07070-8",
+     "cited_by": 8,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -923,17 +945,6 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.2196/75527",
      "cited_by": 17,
-     "problem": "semiconductor-skills",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Microplastic Pollution: Sources, Degradation Mechanisms, Analytical Advances, and Mitigation Strategies for Environmental Sustainability",
-     "date": "2025-10-18",
-     "source": "Reviews of Environmental Contamination and Toxicology",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s44169-025-00098-0",
-     "cited_by": 34,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     }
@@ -1540,8 +1551,38 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6038,
+   "new_papers_12m": 6033,
    "evidence": [
+    {
+     "tier": "news",
+     "title": "Переметнулся ли Трамп на сторону противника ? ( The Spectator , Великобритания ) ",
+     "date": "20261018",
+     "source": "inosmi.ru",
+     "domain": "inosmi.ru",
+     "doi_or_url": "https://inosmi.ru/20261018/ssha-280692759.html",
+     "problem": "energy-security",
+     "status": "corroborating"
+    },
+    {
+     "tier": "news",
+     "title": "Bangkok Meetings Highlight Overlapping Shocks to Global Economy",
+     "date": "20261018",
+     "source": "english.aawsat.com",
+     "domain": "english.aawsat.com",
+     "doi_or_url": "https://english.aawsat.com/business/5330825-bangkok-meetings-highlight-overlapping-shocks-global-economy",
+     "problem": "energy-security",
+     "status": "corroborating"
+    },
+    {
+     "tier": "news",
+     "title": "بلاد دون أهلها : الوجه الطبقيلـ « إعادة إعمار » سورية",
+     "date": "20261018",
+     "source": "kassioun.org",
+     "domain": "kassioun.org",
+     "doi_or_url": "https://kassioun.org/economic/item/86955:blad-dwn-ahlha-alwjh-altbqyl-a-adt-a-mar-swryt",
+     "problem": "energy-security",
+     "status": "corroborating"
+    },
     {
      "tier": "research",
      "title": "The global transmission of U.S. monetary policy",
@@ -1793,7 +1834,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 386,
+   "new_papers_12m": 384,
    "evidence": [
     {
      "tier": "research",
