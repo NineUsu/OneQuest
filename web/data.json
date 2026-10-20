@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-19T01:03+00:00",
+ "generated_at": "2026-10-20T01:42+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-09-20",
   "2026-09-21",
   "2026-09-22",
   "2026-09-23",
@@ -43,7 +42,8 @@
   "2026-10-16",
   "2026-10-17",
   "2026-10-18",
-  "2026-10-19"
+  "2026-10-19",
+  "2026-10-20"
  ],
  "daily_signals": {
   "supply": [
@@ -144,8 +144,7 @@
   ]
  },
  "evidence_status": {
-  "unverified": 1,
-  "corroborating": 73
+  "corroborating": 74
  },
  "new_evidence_today": 0,
  "problems": [
@@ -225,16 +224,6 @@
    "new_papers_12m": 189,
    "evidence": [
     {
-     "tier": "news",
-     "title": " 【 养老之难｜运营篇 】 一场  大浪淘沙  的长期战役 - 经济观察网 － 专业财经新闻网站",
-     "date": "20261018",
-     "source": "eeo.com.cn",
-     "domain": "eeo.com.cn",
-     "doi_or_url": "http://www.eeo.com.cn/2026/1018/1068216.shtml",
-     "problem": "elder-care",
-     "status": "unverified"
-    },
-    {
      "tier": "research",
      "title": "AI‐Driven Revolution of Medical Robotics Across Surgical Innovation, Rehabilitation Intelligence, and Multimodal Healthcare Delivery",
      "date": "2026-03-01",
@@ -274,7 +263,7 @@
      "source": "BMC Medicine",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1186/s12916-025-04522-z",
-     "cited_by": 6,
+     "cited_by": 7,
      "problem": "elder-care",
      "status": "corroborating"
     },
@@ -363,7 +352,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 87113,
+   "new_papers_12m": 87285,
    "evidence": [
     {
      "tier": "research",
@@ -372,7 +361,7 @@
      "source": "Diabetes Care",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.2337/dc26-s006",
-     "cited_by": 158,
+     "cited_by": 159,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -416,7 +405,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 429,
+     "cited_by": 431,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -495,7 +484,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1442,
+   "new_papers_12m": 1447,
    "evidence": [
     {
      "tier": "research",
@@ -537,7 +526,7 @@
      "source": "Administrative Sciences",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/admsci15110452",
-     "cited_by": 14,
+     "cited_by": 15,
      "problem": "ai-jobs",
      "status": "corroborating"
     },
@@ -619,14 +608,7 @@
     6,
     6
    ],
-   "indicator": {
-    "indicator": "FB.BNK.CAPA.ZS",
-    "name": "Bank capital to assets ratio (%)",
-    "year": 2024,
-    "value": 11.125634912273,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 627,
    "evidence": [
     {
@@ -759,7 +741,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
    },
-   "new_papers_12m": 181,
+   "new_papers_12m": 182,
    "evidence": [
     {
      "tier": "research",
@@ -891,7 +873,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 531,
+   "new_papers_12m": 532,
    "evidence": [
     {
      "tier": "research",
@@ -906,12 +888,12 @@
     },
     {
      "tier": "research",
-     "title": "Adaptive and risk recovery strategies for enhancing supply chain network resilience: a cascading failure perspective",
-     "date": "2026-02-16",
-     "source": "Annals of Operations Research",
+     "title": "Reviewing the socio-technical dynamics of AI, data centers and digitalization on energy and the environment",
+     "date": "2026-03-12",
+     "source": "Renewable and Sustainable Energy Reviews",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s10479-026-07070-8",
-     "cited_by": 8,
+     "doi_or_url": "https://doi.org/10.1016/j.rser.2026.116861",
+     "cited_by": 16,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -1281,15 +1263,8 @@
     4,
     8
    ],
-   "indicator": {
-    "indicator": "FS.AST.PRVT.GD.ZS",
-    "name": "Domestic credit to private sector (% of GDP)",
-    "year": 2025,
-    "value": 143.080092396055,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
-   },
-   "new_papers_12m": 213,
+   "indicator": null,
+   "new_papers_12m": 214,
    "evidence": [
     {
      "tier": "research",
@@ -1551,35 +1526,45 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6033,
+   "new_papers_12m": 6055,
    "evidence": [
     {
      "tier": "news",
-     "title": "Переметнулся ли Трамп на сторону противника ? ( The Spectator , Великобритания ) ",
-     "date": "20261018",
-     "source": "inosmi.ru",
-     "domain": "inosmi.ru",
-     "doi_or_url": "https://inosmi.ru/20261018/ssha-280692759.html",
+     "title": "Energy security and beyond - News Features",
+     "date": "20261019",
+     "source": "dailymirror.lk",
+     "domain": "dailymirror.lk",
+     "doi_or_url": "https://www.dailymirror.lk/news-features/Energy-security-and-beyond/131-352838",
      "problem": "energy-security",
      "status": "corroborating"
     },
     {
      "tier": "news",
-     "title": "Bangkok Meetings Highlight Overlapping Shocks to Global Economy",
-     "date": "20261018",
-     "source": "english.aawsat.com",
-     "domain": "english.aawsat.com",
-     "doi_or_url": "https://english.aawsat.com/business/5330825-bangkok-meetings-highlight-overlapping-shocks-global-economy",
+     "title": "Импортозамещение грузоподъемного оборудования : завод Стартком",
+     "date": "20261019",
+     "source": "mosoblpress.ru",
+     "domain": "mosoblpress.ru",
+     "doi_or_url": "https://www.mosoblpress.ru/42/209802/",
      "problem": "energy-security",
      "status": "corroborating"
     },
     {
      "tier": "news",
-     "title": "بلاد دون أهلها : الوجه الطبقيلـ « إعادة إعمار » سورية",
-     "date": "20261018",
-     "source": "kassioun.org",
-     "domain": "kassioun.org",
-     "doi_or_url": "https://kassioun.org/economic/item/86955:blad-dwn-ahlha-alwjh-altbqyl-a-adt-a-mar-swryt",
+     "title": "湘金轩丨厚植生长沃土 ， 让三湘民企展现更大作为",
+     "date": "20261019",
+     "source": "baijiahao.baidu.com",
+     "domain": "baijiahao.baidu.com",
+     "doi_or_url": "https://baijiahao.baidu.com/s?id=1879452771038462204",
+     "problem": "energy-security",
+     "status": "corroborating"
+    },
+    {
+     "tier": "news",
+     "title": "Enerji Bakanı Bayraktar Odatvye anlattı : Moskovadan Washingtona enerji trafiği ... Türkiyenin 2040 hesabı | Mustafa İlker Yücel",
+     "date": "20261019",
+     "source": "odatv.com",
+     "domain": "odatv.com",
+     "doi_or_url": "https://www.odatv.com/yazarlar/mustafa-ilker-yucel/enerji-bakani-bayraktar-odatvye-anlatti-moskovadan-washingtona-enerji-trafigi-turkiyenin-2040-hesabi-120167247",
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -1843,7 +1828,7 @@
      "source": "C – Journal of Carbon Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/c12010007",
-     "cited_by": 15,
+     "cited_by": 16,
      "problem": "groundwater",
      "status": "corroborating"
     },
