@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-20T01:42+00:00",
+ "generated_at": "2026-10-21T01:27+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-09-21",
   "2026-09-22",
   "2026-09-23",
   "2026-09-24",
@@ -43,7 +42,8 @@
   "2026-10-17",
   "2026-10-18",
   "2026-10-19",
-  "2026-10-20"
+  "2026-10-20",
+  "2026-10-21"
  ],
  "daily_signals": {
   "supply": [
@@ -144,7 +144,7 @@
   ]
  },
  "evidence_status": {
-  "corroborating": 74
+  "corroborating": 70
  },
  "new_evidence_today": 0,
  "problems": [
@@ -221,7 +221,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
    },
-   "new_papers_12m": 189,
+   "new_papers_12m": 191,
    "evidence": [
     {
      "tier": "research",
@@ -352,7 +352,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 87285,
+   "new_papers_12m": 87475,
    "evidence": [
     {
      "tier": "research",
@@ -383,7 +383,7 @@
      "source": "Artificial Intelligence Review",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 168,
+     "cited_by": 169,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -394,7 +394,7 @@
      "source": "Phytochemistry Reviews",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11101-025-10194-7",
-     "cited_by": 166,
+     "cited_by": 167,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -405,7 +405,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 431,
+     "cited_by": 433,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -484,7 +484,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1447,
+   "new_papers_12m": 1453,
    "evidence": [
     {
      "tier": "research",
@@ -515,7 +515,7 @@
      "source": "Frontiers in Artificial Intelligence",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3389/frai.2025.1728881",
-     "cited_by": 18,
+     "cited_by": 19,
      "problem": "ai-jobs",
      "status": "corroborating"
     },
@@ -608,8 +608,15 @@
     6,
     6
    ],
-   "indicator": null,
-   "new_papers_12m": 627,
+   "indicator": {
+    "indicator": "FB.BNK.CAPA.ZS",
+    "name": "Bank capital to assets ratio (%)",
+    "year": 2024,
+    "value": 11.125634912273,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
+   },
+   "new_papers_12m": 626,
    "evidence": [
     {
      "tier": "research",
@@ -618,7 +625,7 @@
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su18020732",
-     "cited_by": 16,
+     "cited_by": 17,
      "problem": "sme-credit",
      "status": "corroborating"
     },
@@ -794,7 +801,7 @@
      "source": "Applied Sciences",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/app152111660",
-     "cited_by": 38,
+     "cited_by": 39,
      "problem": "battery-recycling",
      "status": "corroborating"
     }
@@ -873,7 +880,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 532,
+   "new_papers_12m": 534,
    "evidence": [
     {
      "tier": "research",
@@ -893,7 +900,7 @@
      "source": "Renewable and Sustainable Energy Reviews",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.rser.2026.116861",
-     "cited_by": 16,
+     "cited_by": 17,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -1139,19 +1146,8 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
    },
-   "new_papers_12m": 110,
+   "new_papers_12m": 109,
    "evidence": [
-    {
-     "tier": "research",
-     "title": "Life Cycle Assessment of Diethyl Carbonate (DEC) and Glycerol Carbonate (GC) Coproduction from Bioethanol, CO 2 , and Glycerol",
-     "date": "2026-02-27",
-     "source": "ACS Sustainable Chemistry & Engineering",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1021/acssuschemeng.5c13182",
-     "cited_by": 4,
-     "problem": "pm25",
-     "status": "corroborating"
-    },
     {
      "tier": "research",
      "title": "Impact of household air pollution on under 5 mortalities and ARI in sub saharan africa: evidence from demographic and health survey 2010–2020",
@@ -1176,12 +1172,23 @@
     },
     {
      "tier": "research",
+     "title": "Resourceful utilization of crop residue by smallholder farmers in major grain-producing areas: pathways and countermeasures",
+     "date": "2026-01-12",
+     "source": "Scientific Reports",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1038/s41598-026-35164-7",
+     "cited_by": 5,
+     "problem": "pm25",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
      "title": "Air Pollution as a Driver of Forest Dynamics: Patterns, Mechanisms, and Knowledge Gaps",
      "date": "2026-01-08",
      "source": "Forests",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/f17010081",
-     "cited_by": 8,
+     "cited_by": 9,
      "problem": "pm25",
      "status": "corroborating"
     },
@@ -1263,7 +1270,14 @@
     4,
     8
    ],
-   "indicator": null,
+   "indicator": {
+    "indicator": "FS.AST.PRVT.GD.ZS",
+    "name": "Domestic credit to private sector (% of GDP)",
+    "year": 2025,
+    "value": 143.080092396055,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
+   },
    "new_papers_12m": 214,
    "evidence": [
     {
@@ -1526,48 +1540,8 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6055,
+   "new_papers_12m": 6065,
    "evidence": [
-    {
-     "tier": "news",
-     "title": "Energy security and beyond - News Features",
-     "date": "20261019",
-     "source": "dailymirror.lk",
-     "domain": "dailymirror.lk",
-     "doi_or_url": "https://www.dailymirror.lk/news-features/Energy-security-and-beyond/131-352838",
-     "problem": "energy-security",
-     "status": "corroborating"
-    },
-    {
-     "tier": "news",
-     "title": "Импортозамещение грузоподъемного оборудования : завод Стартком",
-     "date": "20261019",
-     "source": "mosoblpress.ru",
-     "domain": "mosoblpress.ru",
-     "doi_or_url": "https://www.mosoblpress.ru/42/209802/",
-     "problem": "energy-security",
-     "status": "corroborating"
-    },
-    {
-     "tier": "news",
-     "title": "湘金轩丨厚植生长沃土 ， 让三湘民企展现更大作为",
-     "date": "20261019",
-     "source": "baijiahao.baidu.com",
-     "domain": "baijiahao.baidu.com",
-     "doi_or_url": "https://baijiahao.baidu.com/s?id=1879452771038462204",
-     "problem": "energy-security",
-     "status": "corroborating"
-    },
-    {
-     "tier": "news",
-     "title": "Enerji Bakanı Bayraktar Odatvye anlattı : Moskovadan Washingtona enerji trafiği ... Türkiyenin 2040 hesabı | Mustafa İlker Yücel",
-     "date": "20261019",
-     "source": "odatv.com",
-     "domain": "odatv.com",
-     "doi_or_url": "https://www.odatv.com/yazarlar/mustafa-ilker-yucel/enerji-bakani-bayraktar-odatvye-anlatti-moskovadan-washingtona-enerji-trafigi-turkiyenin-2040-hesabi-120167247",
-     "problem": "energy-security",
-     "status": "corroborating"
-    },
     {
      "tier": "research",
      "title": "The global transmission of U.S. monetary policy",
@@ -1608,7 +1582,7 @@
      "source": "RSC Advances",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1039/d5ra09029f",
-     "cited_by": 37,
+     "cited_by": 38,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -1619,7 +1593,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01919-1",
-     "cited_by": 270,
+     "cited_by": 272,
      "problem": "energy-security",
      "status": "corroborating"
     }
@@ -1696,7 +1670,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
    },
-   "new_papers_12m": 110,
+   "new_papers_12m": 111,
    "evidence": [
     {
      "tier": "research",
@@ -1828,7 +1802,7 @@
      "source": "C – Journal of Carbon Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/c12010007",
-     "cited_by": 16,
+     "cited_by": 17,
      "problem": "groundwater",
      "status": "corroborating"
     },
