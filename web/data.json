@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-21T01:27+00:00",
+ "generated_at": "2026-10-22T01:26+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-09-22",
   "2026-09-23",
   "2026-09-24",
   "2026-09-25",
@@ -43,7 +42,8 @@
   "2026-10-18",
   "2026-10-19",
   "2026-10-20",
-  "2026-10-21"
+  "2026-10-21",
+  "2026-10-22"
  ],
  "daily_signals": {
   "supply": [
@@ -221,7 +221,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
    },
-   "new_papers_12m": 191,
+   "new_papers_12m": 192,
    "evidence": [
     {
      "tier": "research",
@@ -230,7 +230,7 @@
      "source": "MedComm",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/mco2.70597",
-     "cited_by": 6,
+     "cited_by": 7,
      "problem": "elder-care",
      "status": "corroborating"
     },
@@ -247,11 +247,11 @@
     },
     {
      "tier": "research",
-     "title": "The Application of Mobile Health in Self-Management Among Patients Undergoing Dialysis: Scoping Review",
-     "date": "2026-01-02",
-     "source": "Journal of Medical Internet Research",
+     "title": "Barriers and facilitators in utilisation of dental health services across low- and middle-income countries: a scoping review",
+     "date": "2026-01-13",
+     "source": "Evidence-Based Dentistry",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.2196/76880",
+     "doi_or_url": "https://doi.org/10.1038/s41432-025-01200-0",
      "cited_by": 6,
      "problem": "elder-care",
      "status": "corroborating"
@@ -352,7 +352,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 87475,
+   "new_papers_12m": 87557,
    "evidence": [
     {
      "tier": "research",
@@ -361,7 +361,7 @@
      "source": "Diabetes Care",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.2337/dc26-s006",
-     "cited_by": 159,
+     "cited_by": 163,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -383,7 +383,7 @@
      "source": "Artificial Intelligence Review",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 169,
+     "cited_by": 170,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -405,7 +405,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 433,
+     "cited_by": 437,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -484,7 +484,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1453,
+   "new_papers_12m": 1451,
    "evidence": [
     {
      "tier": "research",
@@ -880,7 +880,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 534,
+   "new_papers_12m": 537,
    "evidence": [
     {
      "tier": "research",
@@ -900,7 +900,7 @@
      "source": "Renewable and Sustainable Energy Reviews",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.rser.2026.116861",
-     "cited_by": 17,
+     "cited_by": 18,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -911,7 +911,7 @@
      "source": "Biosensors",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/bios16020112",
-     "cited_by": 32,
+     "cited_by": 33,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -922,7 +922,7 @@
      "source": "Frontiers in Mechanical Engineering",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3389/fmech.2025.1722114",
-     "cited_by": 17,
+     "cited_by": 18,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -1004,15 +1004,8 @@
     17,
     15
    ],
-   "indicator": {
-    "indicator": "AG.PRD.FOOD.XD",
-    "name": "Food production index (2014-2016 = 100)",
-    "year": 2024,
-    "value": 98.91,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
-   },
-   "new_papers_12m": 743,
+   "indicator": null,
+   "new_papers_12m": 740,
    "evidence": [
     {
      "tier": "research",
@@ -1146,7 +1139,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
    },
-   "new_papers_12m": 109,
+   "new_papers_12m": 110,
    "evidence": [
     {
      "tier": "research",
@@ -1278,7 +1271,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 214,
+   "new_papers_12m": 213,
    "evidence": [
     {
      "tier": "research",
@@ -1540,7 +1533,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6065,
+   "new_papers_12m": 6081,
    "evidence": [
     {
      "tier": "research",
@@ -1571,7 +1564,7 @@
      "source": "Quality & Quantity",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11135-026-02572-w",
-     "cited_by": 37,
+     "cited_by": 38,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -1593,7 +1586,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01919-1",
-     "cited_by": 272,
+     "cited_by": 277,
      "problem": "energy-security",
      "status": "corroborating"
     }
@@ -1712,7 +1705,7 @@
      "source": "International Journal for Equity in Health",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1186/s12939-025-02668-z",
-     "cited_by": 11,
+     "cited_by": 12,
      "problem": "rural-doctors",
      "status": "corroborating"
     },
@@ -1793,8 +1786,19 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 384,
+   "new_papers_12m": 382,
    "evidence": [
+    {
+     "tier": "research",
+     "title": "Biological synergies for heavy metal bioremediation across microbial, algal, and phytoremediation perspectives",
+     "date": "2026-03-02",
+     "source": "Discover Green Chemistry",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1007/s44509-026-00003-5",
+     "cited_by": 11,
+     "problem": "groundwater",
+     "status": "corroborating"
+    },
     {
      "tier": "research",
      "title": "Organic Amendments for Sustainable Agriculture: Effects on Soil Function, Crop Productivity and Carbon Sequestration Under Variable Contexts",
@@ -1836,17 +1840,6 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s44274-025-00390-9",
      "cited_by": 23,
-     "problem": "groundwater",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Bottom Sediments as Dynamic Arenas for Anthropogenic Pollutants: Profiling Sources, Unraveling Fate Mechanisms, and Assessing Ecological Consequences",
-     "date": "2025-10-21",
-     "source": "International Journal of Molecular Sciences",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/ijms262010219",
-     "cited_by": 25,
      "problem": "groundwater",
      "status": "corroborating"
     }
