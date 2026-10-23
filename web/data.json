@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-22T01:26+00:00",
+ "generated_at": "2026-10-23T01:24+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-09-23",
   "2026-09-24",
   "2026-09-25",
   "2026-09-26",
@@ -43,7 +42,8 @@
   "2026-10-19",
   "2026-10-20",
   "2026-10-21",
-  "2026-10-22"
+  "2026-10-22",
+  "2026-10-23"
  ],
  "daily_signals": {
   "supply": [
@@ -144,6 +144,7 @@
   ]
  },
  "evidence_status": {
+  "unverified": 1,
   "corroborating": 70
  },
  "new_evidence_today": 0,
@@ -352,7 +353,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 87557,
+   "new_papers_12m": 87662,
    "evidence": [
     {
      "tier": "research",
@@ -383,7 +384,7 @@
      "source": "Artificial Intelligence Review",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 170,
+     "cited_by": 174,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -394,7 +395,7 @@
      "source": "Phytochemistry Reviews",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11101-025-10194-7",
-     "cited_by": 167,
+     "cited_by": 169,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -405,7 +406,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 437,
+     "cited_by": 447,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -484,7 +485,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1451,
+   "new_papers_12m": 1453,
    "evidence": [
     {
      "tier": "research",
@@ -526,7 +527,7 @@
      "source": "Administrative Sciences",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/admsci15110452",
-     "cited_by": 15,
+     "cited_by": 16,
      "problem": "ai-jobs",
      "status": "corroborating"
     },
@@ -537,7 +538,7 @@
      "source": "Merits",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/merits5040023",
-     "cited_by": 30,
+     "cited_by": 31,
      "problem": "ai-jobs",
      "status": "corroborating"
     }
@@ -616,7 +617,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
    },
-   "new_papers_12m": 626,
+   "new_papers_12m": 628,
    "evidence": [
     {
      "tier": "research",
@@ -636,7 +637,7 @@
      "source": "Wiley Interdisciplinary Reviews Energy and Environment",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/wene.70020",
-     "cited_by": 9,
+     "cited_by": 10,
      "problem": "sme-credit",
      "status": "corroborating"
     },
@@ -647,7 +648,7 @@
      "source": "Future Business Journal",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1186/s43093-025-00710-8",
-     "cited_by": 9,
+     "cited_by": 10,
      "problem": "sme-credit",
      "status": "corroborating"
     },
@@ -740,14 +741,7 @@
     13,
     13
    ],
-   "indicator": {
-    "indicator": "EG.FEC.RNEW.ZS",
-    "name": "Renewable energy consumption (% of total final energy consumption)",
-    "year": 2021,
-    "value": 19,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 182,
    "evidence": [
     {
@@ -757,7 +751,7 @@
      "source": "Journal of Sustainable Metallurgy",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s40831-026-01439-6",
-     "cited_by": 20,
+     "cited_by": 21,
      "problem": "battery-recycling",
      "status": "corroborating"
     },
@@ -880,7 +874,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 537,
+   "new_papers_12m": 538,
    "evidence": [
     {
      "tier": "research",
@@ -933,7 +927,7 @@
      "source": "JMIR AI",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.2196/75527",
-     "cited_by": 17,
+     "cited_by": 18,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     }
@@ -1004,8 +998,15 @@
     17,
     15
    ],
-   "indicator": null,
-   "new_papers_12m": 740,
+   "indicator": {
+    "indicator": "AG.PRD.FOOD.XD",
+    "name": "Food production index (2014-2016 = 100)",
+    "year": 2024,
+    "value": 98.91,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
+   },
+   "new_papers_12m": 738,
    "evidence": [
     {
      "tier": "research",
@@ -1271,7 +1272,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 213,
+   "new_papers_12m": 216,
    "evidence": [
     {
      "tier": "research",
@@ -1302,7 +1303,7 @@
      "source": "Wiley Interdisciplinary Reviews Energy and Environment",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/wene.70020",
-     "cited_by": 9,
+     "cited_by": 10,
      "problem": "household-debt",
      "status": "corroborating"
     },
@@ -1402,8 +1403,18 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
    },
-   "new_papers_12m": 35,
+   "new_papers_12m": 36,
    "evidence": [
+    {
+     "tier": "news",
+     "title": "Beyond Access : Thailand and the Frontiers of Financial Inclusion",
+     "date": "20261022",
+     "source": "cgap.org",
+     "domain": "cgap.org",
+     "doi_or_url": "https://www.cgap.org/research/beyond-access-thailand-and-frontiers-of-financial-inclusion",
+     "problem": "online-fraud",
+     "status": "unverified"
+    },
     {
      "tier": "research",
      "title": "Regulating the Crypto-Laundering Chain: A Comparative Study of Scam Compounds and Money Mule Mechanisms Within Criminal Networks",
@@ -1533,7 +1544,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6081,
+   "new_papers_12m": 6098,
    "evidence": [
     {
      "tier": "research",
@@ -1575,7 +1586,7 @@
      "source": "RSC Advances",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1039/d5ra09029f",
-     "cited_by": 38,
+     "cited_by": 39,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -1586,7 +1597,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01919-1",
-     "cited_by": 277,
+     "cited_by": 280,
      "problem": "energy-security",
      "status": "corroborating"
     }
@@ -1663,7 +1674,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
    },
-   "new_papers_12m": 111,
+   "new_papers_12m": 110,
    "evidence": [
     {
      "tier": "research",
@@ -1683,7 +1694,7 @@
      "source": "Current HIV/AIDS Reports",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11904-026-00783-2",
-     "cited_by": 5,
+     "cited_by": 6,
      "problem": "rural-doctors",
      "status": "corroborating"
     },
@@ -1786,7 +1797,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 382,
+   "new_papers_12m": 381,
    "evidence": [
     {
      "tier": "research",
@@ -1806,7 +1817,7 @@
      "source": "C – Journal of Carbon Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/c12010007",
-     "cited_by": 17,
+     "cited_by": 18,
      "problem": "groundwater",
      "status": "corroborating"
     },
@@ -1817,7 +1828,7 @@
      "source": "World Water Policy",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/wwp2.70055",
-     "cited_by": 13,
+     "cited_by": 14,
      "problem": "groundwater",
      "status": "corroborating"
     },
@@ -1828,7 +1839,7 @@
      "source": "International Journal of Molecular Sciences",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/ijms262311656",
-     "cited_by": 29,
+     "cited_by": 30,
      "problem": "groundwater",
      "status": "corroborating"
     },
