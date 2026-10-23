@@ -1,5 +1,5 @@
 # OneQuest mockup 
-Tools : ใช้ Claude Opus5.5
+Tools and Mentors/Coworker : Claude Opus5.5
 
 หน้าเว็บตัวอย่างของ OneQuest: แผนที่ปัญหาและโอกาส (กราฟฟองสบู่ ขนาดปัญหา × ระดับที่ถูกละเลย), สัญญาณรายวัน, การตรวจสอบหลักฐาน และอันดับโอกาส
 
