@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-23T01:24+00:00",
+ "generated_at": "2026-10-24T01:30+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-09-24",
   "2026-09-25",
   "2026-09-26",
   "2026-09-27",
@@ -43,7 +42,8 @@
   "2026-10-20",
   "2026-10-21",
   "2026-10-22",
-  "2026-10-23"
+  "2026-10-23",
+  "2026-10-24"
  ],
  "daily_signals": {
   "supply": [
@@ -144,7 +144,6 @@
   ]
  },
  "evidence_status": {
-  "unverified": 1,
   "corroborating": 70
  },
  "new_evidence_today": 0,
@@ -222,7 +221,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
    },
-   "new_papers_12m": 192,
+   "new_papers_12m": 191,
    "evidence": [
     {
      "tier": "research",
@@ -353,7 +352,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 87662,
+   "new_papers_12m": 87748,
    "evidence": [
     {
      "tier": "research",
@@ -362,7 +361,7 @@
      "source": "Diabetes Care",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.2337/dc26-s006",
-     "cited_by": 163,
+     "cited_by": 164,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -406,7 +405,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 447,
+     "cited_by": 448,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -485,7 +484,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1453,
+   "new_papers_12m": 1454,
    "evidence": [
     {
      "tier": "research",
@@ -609,15 +608,8 @@
     6,
     6
    ],
-   "indicator": {
-    "indicator": "FB.BNK.CAPA.ZS",
-    "name": "Bank capital to assets ratio (%)",
-    "year": 2024,
-    "value": 11.125634912273,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
-   },
-   "new_papers_12m": 628,
+   "indicator": null,
+   "new_papers_12m": 631,
    "evidence": [
     {
      "tier": "research",
@@ -741,8 +733,15 @@
     13,
     13
    ],
-   "indicator": null,
-   "new_papers_12m": 182,
+   "indicator": {
+    "indicator": "EG.FEC.RNEW.ZS",
+    "name": "Renewable energy consumption (% of total final energy consumption)",
+    "year": 2021,
+    "value": 19,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
+   },
+   "new_papers_12m": 181,
    "evidence": [
     {
      "tier": "research",
@@ -874,7 +873,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 538,
+   "new_papers_12m": 540,
    "evidence": [
     {
      "tier": "research",
@@ -1006,7 +1005,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
    },
-   "new_papers_12m": 738,
+   "new_papers_12m": 741,
    "evidence": [
     {
      "tier": "research",
@@ -1272,7 +1271,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 216,
+   "new_papers_12m": 215,
    "evidence": [
     {
      "tier": "research",
@@ -1406,16 +1405,6 @@
    "new_papers_12m": 36,
    "evidence": [
     {
-     "tier": "news",
-     "title": "Beyond Access : Thailand and the Frontiers of Financial Inclusion",
-     "date": "20261022",
-     "source": "cgap.org",
-     "domain": "cgap.org",
-     "doi_or_url": "https://www.cgap.org/research/beyond-access-thailand-and-frontiers-of-financial-inclusion",
-     "problem": "online-fraud",
-     "status": "unverified"
-    },
-    {
      "tier": "research",
      "title": "Regulating the Crypto-Laundering Chain: A Comparative Study of Scam Compounds and Money Mule Mechanisms Within Criminal Networks",
      "date": "2026-04-21",
@@ -1544,7 +1533,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6098,
+   "new_papers_12m": 6103,
    "evidence": [
     {
      "tier": "research",
@@ -1597,7 +1586,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01919-1",
-     "cited_by": 280,
+     "cited_by": 281,
      "problem": "energy-security",
      "status": "corroborating"
     }
@@ -1674,7 +1663,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
    },
-   "new_papers_12m": 110,
+   "new_papers_12m": 111,
    "evidence": [
     {
      "tier": "research",
@@ -1797,7 +1786,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 381,
+   "new_papers_12m": 382,
    "evidence": [
     {
      "tier": "research",
