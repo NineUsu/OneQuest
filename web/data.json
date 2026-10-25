@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-24T01:30+00:00",
+ "generated_at": "2026-10-25T00:59+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-09-25",
   "2026-09-26",
   "2026-09-27",
   "2026-09-28",
@@ -43,7 +42,8 @@
   "2026-10-21",
   "2026-10-22",
   "2026-10-23",
-  "2026-10-24"
+  "2026-10-24",
+  "2026-10-25"
  ],
  "daily_signals": {
   "supply": [
@@ -221,7 +221,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
    },
-   "new_papers_12m": 191,
+   "new_papers_12m": 190,
    "evidence": [
     {
      "tier": "research",
@@ -352,8 +352,19 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 87748,
+   "new_papers_12m": 87853,
    "evidence": [
+    {
+     "tier": "research",
+     "title": "Mean-Field Limit of Non-exchangeable Multi-agent Systems Over Hypergraphs with Unbounded Rank",
+     "date": "2026-10-23",
+     "source": "Journal of Nonlinear Science",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1007/s00332-026-10338-9",
+     "cited_by": 241,
+     "problem": "mental-health",
+     "status": "corroborating"
+    },
     {
      "tier": "research",
      "title": "6. Glycemic Goals, Hypoglycemia, and Hyperglycemic Crises: Standards of Care in Diabetes—2026",
@@ -361,18 +372,7 @@
      "source": "Diabetes Care",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.2337/dc26-s006",
-     "cited_by": 164,
-     "problem": "mental-health",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Prompt engineering for healthcare: Methodologies and applications",
-     "date": "2025-11-22",
-     "source": "Meta-Radiology",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1016/j.metrad.2025.100190",
-     "cited_by": 149,
+     "cited_by": 167,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -383,7 +383,7 @@
      "source": "Artificial Intelligence Review",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 174,
+     "cited_by": 178,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -394,7 +394,7 @@
      "source": "Phytochemistry Reviews",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11101-025-10194-7",
-     "cited_by": 169,
+     "cited_by": 170,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -405,7 +405,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 448,
+     "cited_by": 452,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -484,7 +484,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1454,
+   "new_papers_12m": 1462,
    "evidence": [
     {
      "tier": "research",
@@ -504,7 +504,7 @@
      "source": "Knowledge Economy and Lifelong Learning",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.61093/kell.2(1).48-66.2026",
-     "cited_by": 14,
+     "cited_by": 15,
      "problem": "ai-jobs",
      "status": "corroborating"
     },
@@ -608,8 +608,15 @@
     6,
     6
    ],
-   "indicator": null,
-   "new_papers_12m": 631,
+   "indicator": {
+    "indicator": "FB.BNK.CAPA.ZS",
+    "name": "Bank capital to assets ratio (%)",
+    "year": 2024,
+    "value": 11.125634912273,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
+   },
+   "new_papers_12m": 632,
    "evidence": [
     {
      "tier": "research",
@@ -741,7 +748,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
    },
-   "new_papers_12m": 181,
+   "new_papers_12m": 183,
    "evidence": [
     {
      "tier": "research",
@@ -873,7 +880,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 540,
+   "new_papers_12m": 542,
    "evidence": [
     {
      "tier": "research",
@@ -926,7 +933,7 @@
      "source": "JMIR AI",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.2196/75527",
-     "cited_by": 18,
+     "cited_by": 20,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     }
@@ -1025,7 +1032,7 @@
      "source": "Nature",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41586-025-10084-0",
-     "cited_by": 19,
+     "cited_by": 20,
      "problem": "food-loss",
      "status": "corroborating"
     },
@@ -1271,7 +1278,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 215,
+   "new_papers_12m": 217,
    "evidence": [
     {
      "tier": "research",
@@ -1533,7 +1540,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6103,
+   "new_papers_12m": 6119,
    "evidence": [
     {
      "tier": "research",
@@ -1575,7 +1582,7 @@
      "source": "RSC Advances",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1039/d5ra09029f",
-     "cited_by": 39,
+     "cited_by": 42,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -1586,7 +1593,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01919-1",
-     "cited_by": 281,
+     "cited_by": 283,
      "problem": "energy-security",
      "status": "corroborating"
     }
@@ -1663,7 +1670,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
    },
-   "new_papers_12m": 111,
+   "new_papers_12m": 112,
    "evidence": [
     {
      "tier": "research",
@@ -1786,8 +1793,19 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 382,
+   "new_papers_12m": 379,
    "evidence": [
+    {
+     "tier": "research",
+     "title": "Heavy Metal Toxicity in Clinical and Environmental Health: Sources, Mechanisms, Diagnostics, and Evidence-Based Management of Mercury, Lead, Cadmium, and Arsenic",
+     "date": "2026-04-14",
+     "source": "International Journal of Molecular Sciences",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/ijms27083513",
+     "cited_by": 10,
+     "problem": "groundwater",
+     "status": "corroborating"
+    },
     {
      "tier": "research",
      "title": "Biological synergies for heavy metal bioremediation across microbial, algal, and phytoremediation perspectives",
@@ -1829,17 +1847,6 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/ijms262311656",
      "cited_by": 30,
-     "problem": "groundwater",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Heavy metals contamination and their phytoremediation in soil and water for sustainable environmental restoration",
-     "date": "2025-10-24",
-     "source": "Discover Environment",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s44274-025-00390-9",
-     "cited_by": 23,
      "problem": "groundwater",
      "status": "corroborating"
     }
@@ -1919,7 +1926,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
    },
-   "new_papers_12m": 69,
+   "new_papers_12m": 70,
    "evidence": [
     {
      "tier": "research",
