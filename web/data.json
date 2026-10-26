@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-25T00:59+00:00",
+ "generated_at": "2026-10-26T01:09+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-09-26",
   "2026-09-27",
   "2026-09-28",
   "2026-09-29",
@@ -43,7 +42,8 @@
   "2026-10-22",
   "2026-10-23",
   "2026-10-24",
-  "2026-10-25"
+  "2026-10-25",
+  "2026-10-26"
  ],
  "daily_signals": {
   "supply": [
@@ -213,15 +213,8 @@
     21,
     25
    ],
-   "indicator": {
-    "indicator": "SP.POP.65UP.TO.ZS",
-    "name": "Population ages 65 and above (% of total population)",
-    "year": 2025,
-    "value": 16.017421033045,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
-   },
-   "new_papers_12m": 190,
+   "indicator": null,
+   "new_papers_12m": 191,
    "evidence": [
     {
      "tier": "research",
@@ -352,7 +345,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 87853,
+   "new_papers_12m": 88260,
    "evidence": [
     {
      "tier": "research",
@@ -405,7 +398,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 452,
+     "cited_by": 454,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -484,7 +477,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1462,
+   "new_papers_12m": 1463,
    "evidence": [
     {
      "tier": "research",
@@ -616,7 +609,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
    },
-   "new_papers_12m": 632,
+   "new_papers_12m": 638,
    "evidence": [
     {
      "tier": "research",
@@ -748,7 +741,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
    },
-   "new_papers_12m": 183,
+   "new_papers_12m": 184,
    "evidence": [
     {
      "tier": "research",
@@ -801,7 +794,7 @@
      "source": "Applied Sciences",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/app152111660",
-     "cited_by": 39,
+     "cited_by": 40,
      "problem": "battery-recycling",
      "status": "corroborating"
     }
@@ -880,7 +873,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 542,
+   "new_papers_12m": 544,
    "evidence": [
     {
      "tier": "research",
@@ -1012,7 +1005,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
    },
-   "new_papers_12m": 741,
+   "new_papers_12m": 746,
    "evidence": [
     {
      "tier": "research",
@@ -1043,7 +1036,7 @@
      "source": "Frontiers in Plant Science",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3389/fpls.2025.1694779",
-     "cited_by": 24,
+     "cited_by": 25,
      "problem": "food-loss",
      "status": "corroborating"
     },
@@ -1146,7 +1139,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
    },
-   "new_papers_12m": 110,
+   "new_papers_12m": 112,
    "evidence": [
     {
      "tier": "research",
@@ -1278,7 +1271,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 217,
+   "new_papers_12m": 218,
    "evidence": [
     {
      "tier": "research",
@@ -1532,15 +1525,8 @@
     30,
     30
    ],
-   "indicator": {
-    "indicator": "EG.IMP.CONS.ZS",
-    "name": "Energy imports, net (% of energy use)",
-    "year": 2024,
-    "value": 57.2704702560609,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
-   },
-   "new_papers_12m": 6119,
+   "indicator": null,
+   "new_papers_12m": 6157,
    "evidence": [
     {
      "tier": "research",
@@ -1582,7 +1568,7 @@
      "source": "RSC Advances",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1039/d5ra09029f",
-     "cited_by": 42,
+     "cited_by": 43,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -1793,7 +1779,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 379,
+   "new_papers_12m": 381,
    "evidence": [
     {
      "tier": "research",
@@ -1926,7 +1912,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
    },
-   "new_papers_12m": 70,
+   "new_papers_12m": 71,
    "evidence": [
     {
      "tier": "research",
