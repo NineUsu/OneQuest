@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-26T01:09+00:00",
+ "generated_at": "2026-10-27T02:01+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-09-27",
   "2026-09-28",
   "2026-09-29",
   "2026-09-30",
@@ -43,7 +42,8 @@
   "2026-10-23",
   "2026-10-24",
   "2026-10-25",
-  "2026-10-26"
+  "2026-10-26",
+  "2026-10-27"
  ],
  "daily_signals": {
   "supply": [
@@ -214,7 +214,7 @@
     25
    ],
    "indicator": null,
-   "new_papers_12m": 191,
+   "new_papers_12m": 193,
    "evidence": [
     {
      "tier": "research",
@@ -345,7 +345,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 88260,
+   "new_papers_12m": 88970,
    "evidence": [
     {
      "tier": "research",
@@ -398,7 +398,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 454,
+     "cited_by": 455,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -477,7 +477,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1463,
+   "new_papers_12m": 1482,
    "evidence": [
     {
      "tier": "research",
@@ -601,15 +601,8 @@
     6,
     6
    ],
-   "indicator": {
-    "indicator": "FB.BNK.CAPA.ZS",
-    "name": "Bank capital to assets ratio (%)",
-    "year": 2024,
-    "value": 11.125634912273,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
-   },
-   "new_papers_12m": 638,
+   "indicator": null,
+   "new_papers_12m": 646,
    "evidence": [
     {
      "tier": "research",
@@ -733,15 +726,8 @@
     13,
     13
    ],
-   "indicator": {
-    "indicator": "EG.FEC.RNEW.ZS",
-    "name": "Renewable energy consumption (% of total final energy consumption)",
-    "year": 2021,
-    "value": 19,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
-   },
-   "new_papers_12m": 184,
+   "indicator": null,
+   "new_papers_12m": 188,
    "evidence": [
     {
      "tier": "research",
@@ -873,7 +859,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 544,
+   "new_papers_12m": 551,
    "evidence": [
     {
      "tier": "research",
@@ -1005,7 +991,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
    },
-   "new_papers_12m": 746,
+   "new_papers_12m": 749,
    "evidence": [
     {
      "tier": "research",
@@ -1271,7 +1257,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 218,
+   "new_papers_12m": 219,
    "evidence": [
     {
      "tier": "research",
@@ -1525,8 +1511,15 @@
     30,
     30
    ],
-   "indicator": null,
-   "new_papers_12m": 6157,
+   "indicator": {
+    "indicator": "EG.IMP.CONS.ZS",
+    "name": "Energy imports, net (% of energy use)",
+    "year": 2024,
+    "value": 57.2704702560609,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
+   },
+   "new_papers_12m": 6247,
    "evidence": [
     {
      "tier": "research",
@@ -1579,7 +1572,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01919-1",
-     "cited_by": 283,
+     "cited_by": 286,
      "problem": "energy-security",
      "status": "corroborating"
     }
@@ -1648,15 +1641,8 @@
     9,
     13
    ],
-   "indicator": {
-    "indicator": "SH.MED.PHYS.ZS",
-    "name": "Physicians (per 1,000 people)",
-    "year": 2021,
-    "value": 0.541,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
-   },
-   "new_papers_12m": 112,
+   "indicator": null,
+   "new_papers_12m": 111,
    "evidence": [
     {
      "tier": "research",
@@ -1779,7 +1765,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 381,
+   "new_papers_12m": 383,
    "evidence": [
     {
      "tier": "research",
