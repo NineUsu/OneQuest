@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-27T02:01+00:00",
+ "generated_at": "2026-10-28T02:08+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-09-28",
   "2026-09-29",
   "2026-09-30",
   "2026-10-01",
@@ -43,7 +42,8 @@
   "2026-10-24",
   "2026-10-25",
   "2026-10-26",
-  "2026-10-27"
+  "2026-10-27",
+  "2026-10-28"
  ],
  "daily_signals": {
   "supply": [
@@ -213,20 +213,16 @@
     21,
     25
    ],
-   "indicator": null,
-   "new_papers_12m": 193,
+   "indicator": {
+    "indicator": "SP.POP.65UP.TO.ZS",
+    "name": "Population ages 65 and above (% of total population)",
+    "year": 2025,
+    "value": 16.017421033045,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
+   },
+   "new_papers_12m": 169,
    "evidence": [
-    {
-     "tier": "research",
-     "title": "AI‐Driven Revolution of Medical Robotics Across Surgical Innovation, Rehabilitation Intelligence, and Multimodal Healthcare Delivery",
-     "date": "2026-03-01",
-     "source": "MedComm",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1002/mco2.70597",
-     "cited_by": 7,
-     "problem": "elder-care",
-     "status": "corroborating"
-    },
     {
      "tier": "research",
      "title": "Economic burden of dengue in Puerto Rico, 2010–2023",
@@ -235,6 +231,17 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1186/s40249-026-01412-1",
      "cited_by": 6,
+     "problem": "elder-care",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "The anthropomorphization of AI and the concept of Buddhist compassion in human-machine interaction",
+     "date": "2026-01-14",
+     "source": "Frontiers in Psychology",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3389/fpsyg.2025.1583565",
+     "cited_by": 5,
      "problem": "elder-care",
      "status": "corroborating"
     },
@@ -251,23 +258,23 @@
     },
     {
      "tier": "research",
+     "title": "The epidemiology and spatial distribution of Taenia solium taeniosis and cysticercosis in Kenya: The case of Busia County",
+     "date": "2025-12-05",
+     "source": "PLoS neglected tropical diseases",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1371/journal.pntd.0013746",
+     "cited_by": 5,
+     "problem": "elder-care",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
      "title": "Balancing patient choice and health system capacity: a system dynamics model of dialysis in Thailand",
      "date": "2025-11-20",
      "source": "BMC Medicine",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1186/s12916-025-04522-z",
      "cited_by": 7,
-     "problem": "elder-care",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Adapting health, economic and social policies to address population aging in China",
-     "date": "2025-10-31",
-     "source": "Nature Aging",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1038/s43587-025-00999-8",
-     "cited_by": 54,
      "problem": "elder-care",
      "status": "corroborating"
     }
@@ -345,7 +352,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 88970,
+   "new_papers_12m": 83243,
    "evidence": [
     {
      "tier": "research",
@@ -360,12 +367,12 @@
     },
     {
      "tier": "research",
-     "title": "6. Glycemic Goals, Hypoglycemia, and Hyperglycemic Crises: Standards of Care in Diabetes—2026",
-     "date": "2025-12-08",
-     "source": "Diabetes Care",
+     "title": "Prompt engineering for healthcare: Methodologies and applications",
+     "date": "2025-11-22",
+     "source": "Meta-Radiology",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.2337/dc26-s006",
-     "cited_by": 167,
+     "doi_or_url": "https://doi.org/10.1016/j.metrad.2025.100190",
+     "cited_by": 149,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -387,7 +394,7 @@
      "source": "Phytochemistry Reviews",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11101-025-10194-7",
-     "cited_by": 170,
+     "cited_by": 172,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -398,7 +405,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 455,
+     "cited_by": 456,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -477,7 +484,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1482,
+   "new_papers_12m": 1498,
    "evidence": [
     {
      "tier": "research",
@@ -601,8 +608,15 @@
     6,
     6
    ],
-   "indicator": null,
-   "new_papers_12m": 646,
+   "indicator": {
+    "indicator": "FB.BNK.CAPA.ZS",
+    "name": "Bank capital to assets ratio (%)",
+    "year": 2024,
+    "value": 11.125634912273,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
+   },
+   "new_papers_12m": 661,
    "evidence": [
     {
      "tier": "research",
@@ -726,8 +740,15 @@
     13,
     13
    ],
-   "indicator": null,
-   "new_papers_12m": 188,
+   "indicator": {
+    "indicator": "EG.FEC.RNEW.ZS",
+    "name": "Renewable energy consumption (% of total final energy consumption)",
+    "year": 2021,
+    "value": 19,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
+   },
+   "new_papers_12m": 189,
    "evidence": [
     {
      "tier": "research",
@@ -736,7 +757,7 @@
      "source": "Journal of Sustainable Metallurgy",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s40831-026-01439-6",
-     "cited_by": 21,
+     "cited_by": 22,
      "problem": "battery-recycling",
      "status": "corroborating"
     },
@@ -859,7 +880,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 551,
+   "new_papers_12m": 564,
    "evidence": [
     {
      "tier": "research",
@@ -885,12 +906,12 @@
     },
     {
      "tier": "research",
-     "title": "Commercial Translation of Electrochemical Biosensors: Supply Chain Strategy, Scale-Up Manufacturing, and Regulatory–Quality Considerations",
-     "date": "2026-02-09",
-     "source": "Biosensors",
+     "title": "Adaptive and risk recovery strategies for enhancing supply chain network resilience: a cascading failure perspective",
+     "date": "2026-02-16",
+     "source": "Annals of Operations Research",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/bios16020112",
-     "cited_by": 33,
+     "doi_or_url": "https://doi.org/10.1007/s10479-026-07070-8",
+     "cited_by": 11,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -991,19 +1012,8 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
    },
-   "new_papers_12m": 749,
+   "new_papers_12m": 670,
    "evidence": [
-    {
-     "tier": "research",
-     "title": "Aflatoxins and Human Health: Global Exposure, Disease Burden, and One Health Strategies",
-     "date": "2026-02-10",
-     "source": "Toxins",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/toxins18020090",
-     "cited_by": 20,
-     "problem": "food-loss",
-     "status": "corroborating"
-    },
     {
      "tier": "research",
      "title": "PtdIns(3,5)P2 is an endogenous ligand of STING in innate immune signalling",
@@ -1017,12 +1027,12 @@
     },
     {
      "tier": "research",
-     "title": "Pesticide residue detection techniques for increasing productivity and yield: recent progress and future outlooks",
-     "date": "2025-11-17",
-     "source": "Frontiers in Plant Science",
+     "title": "Impact of Partial Gelatinization on Structure, Physicochemical and Enzymatic Digestion Properties of Rice Starch Used for Rice Noodle-Making",
+     "date": "2025-11-12",
+     "source": "Polymers",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3389/fpls.2025.1694779",
-     "cited_by": 25,
+     "doi_or_url": "https://doi.org/10.3390/polym17223003",
+     "cited_by": 16,
      "problem": "food-loss",
      "status": "corroborating"
     },
@@ -1034,6 +1044,17 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/cosmetics12060252",
      "cited_by": 28,
+     "problem": "food-loss",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Ensuring Fish Safety Through Sustainable Aquaculture Practices",
+     "date": "2025-11-05",
+     "source": "Hygiene",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/hygiene5040051",
+     "cited_by": 19,
      "problem": "food-loss",
      "status": "corroborating"
     },
@@ -1125,7 +1146,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
    },
-   "new_papers_12m": 112,
+   "new_papers_12m": 110,
    "evidence": [
     {
      "tier": "research",
@@ -1257,7 +1278,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 219,
+   "new_papers_12m": 223,
    "evidence": [
     {
      "tier": "research",
@@ -1388,7 +1409,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
    },
-   "new_papers_12m": 36,
+   "new_papers_12m": 38,
    "evidence": [
     {
      "tier": "research",
@@ -1519,7 +1540,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6247,
+   "new_papers_12m": 6293,
    "evidence": [
     {
      "tier": "research",
@@ -1539,7 +1560,7 @@
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su18052165",
-     "cited_by": 40,
+     "cited_by": 42,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -1556,23 +1577,23 @@
     },
     {
      "tier": "research",
-     "title": "Natural fibers in sustainable materials: extraction technologies, fiber modification, and performance–sustainability relationships",
-     "date": "2026-01-01",
-     "source": "RSC Advances",
+     "title": "Impact of drought on global food security by 2050",
+     "date": "2025-12-24",
+     "source": "Nature Communications",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1039/d5ra09029f",
-     "cited_by": 43,
+     "doi_or_url": "https://doi.org/10.1038/s41467-025-67862-7",
+     "cited_by": 37,
      "problem": "energy-security",
      "status": "corroborating"
     },
     {
      "tier": "research",
-     "title": "The 2025 report of the Lancet Countdown on health and climate change: climate change action offers a lifeline",
-     "date": "2025-10-29",
-     "source": "The Lancet",
+     "title": "Supply chain risks in agri-food systems: a comprehensive review of economic vulnerabilities and mitigation approaches",
+     "date": "2025-11-18",
+     "source": "Frontiers in Sustainable Food Systems",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01919-1",
-     "cited_by": 286,
+     "doi_or_url": "https://doi.org/10.3389/fsufs.2025.1649834",
+     "cited_by": 24,
      "problem": "energy-security",
      "status": "corroborating"
     }
@@ -1641,61 +1662,68 @@
     9,
     13
    ],
-   "indicator": null,
-   "new_papers_12m": 111,
+   "indicator": {
+    "indicator": "SH.MED.PHYS.ZS",
+    "name": "Physicians (per 1,000 people)",
+    "year": 2021,
+    "value": 0.541,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
+   },
+   "new_papers_12m": 88,
    "evidence": [
     {
      "tier": "research",
-     "title": "Cancer workforce—a global crisis: a Lancet Oncology Commission",
-     "date": "2026-05-31",
-     "source": "The Lancet Oncology",
+     "title": "Perspectives of Frontline Clinicians and End-Line Users on Smartphone-Based Photography for Assessing Traumatic Dental Injuries: Focus Group Interview Study and Thematic Analysis",
+     "date": "2026-01-26",
+     "source": "JMIR Human Factors",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1016/s1470-2045(26)00065-3",
-     "cited_by": 18,
+     "doi_or_url": "https://doi.org/10.2196/82668",
+     "cited_by": 3,
      "problem": "rural-doctors",
      "status": "corroborating"
     },
     {
      "tier": "research",
-     "title": "Barriers and Facilitators of Oral PrEP Uptake Against HIV Among Selected Priority Populations: A Global Perspective",
-     "date": "2026-03-30",
-     "source": "Current HIV/AIDS Reports",
+     "title": "From Local to Global Perspective in AI-Based Digital Twins in Healthcare",
+     "date": "2025-12-21",
+     "source": "Applied Sciences",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s11904-026-00783-2",
-     "cited_by": 6,
+     "doi_or_url": "https://doi.org/10.3390/app16010083",
+     "cited_by": 4,
      "problem": "rural-doctors",
      "status": "corroborating"
     },
     {
      "tier": "research",
-     "title": "Policy and public health implications for mental health after the COVID-19 pandemic",
-     "date": "2026-01-21",
-     "source": "The Lancet Psychiatry",
+     "title": "Mobile Health Clinics and Telehealth Outreach in Thailand: A Focus on Elderly Care and NCDs",
+     "date": "2025-12-01",
+     "source": "Journal of Multidisciplinary Healthcare",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1016/s2215-0366(25)00358-x",
-     "cited_by": 5,
+     "doi_or_url": "https://doi.org/10.2147/jmdh.s559594",
+     "cited_by": 4,
      "problem": "rural-doctors",
      "status": "corroborating"
     },
     {
      "tier": "research",
-     "title": "Setting priorities for healthcare interventions in Indonesia: a comprehensive conceptual framework",
-     "date": "2025-11-24",
-     "source": "International Journal for Equity in Health",
+     "title": "Effectiveness of a mobile cardiotocography device (iCTG) in improving antenatal care and detecting abnormal fetal heart rate during late pregnancy: an implementation study in Tanzania",
+     "date": "2025-11-26",
+     "source": "BMC Public Health",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1186/s12939-025-02668-z",
-     "cited_by": 12,
+     "doi_or_url": "https://doi.org/10.1186/s12889-025-25383-4",
+     "cited_by": 4,
      "problem": "rural-doctors",
      "status": "corroborating"
     },
     {
      "tier": "research",
-     "title": "Understanding the role and organization of health workers delivering non-communicable disease management in primary care in low- and middle-income countries: a scoping review",
-     "date": "2025-11-17",
-     "source": "BMC Family Practice",
+     "title": "Time toxicity during palliative chemotherapy for advanced malignancies: a prospective study",
+     "date": "2025-10-30",
+     "source": "BMJ Supportive & Palliative Care",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1186/s12875-025-03033-3",
-     "cited_by": 6,
+     "doi_or_url": "https://doi.org/10.1136/spcare-2025-005738",
+     "cited_by": 3,
      "problem": "rural-doctors",
      "status": "corroborating"
     }
@@ -1765,19 +1793,8 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 383,
+   "new_papers_12m": 365,
    "evidence": [
-    {
-     "tier": "research",
-     "title": "Heavy Metal Toxicity in Clinical and Environmental Health: Sources, Mechanisms, Diagnostics, and Evidence-Based Management of Mercury, Lead, Cadmium, and Arsenic",
-     "date": "2026-04-14",
-     "source": "International Journal of Molecular Sciences",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/ijms27083513",
-     "cited_by": 10,
-     "problem": "groundwater",
-     "status": "corroborating"
-    },
     {
      "tier": "research",
      "title": "Biological synergies for heavy metal bioremediation across microbial, algal, and phytoremediation perspectives",
@@ -1786,6 +1803,28 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s44509-026-00003-5",
      "cited_by": 11,
+     "problem": "groundwater",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Biomagnification of Potentially Toxic Elements and Metal-Based Nanomaterials in Food",
+     "date": "2026-02-18",
+     "source": "Environments",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/environments13020116",
+     "cited_by": 10,
+     "problem": "groundwater",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Biochar co-modification by magnetization and mineral impregnation: a step towards improved agri-environmental applications",
+     "date": "2026-02-04",
+     "source": "Biochar",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1007/s42773-025-00536-1",
+     "cited_by": 10,
      "problem": "groundwater",
      "status": "corroborating"
     },
@@ -1808,17 +1847,6 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/wwp2.70055",
      "cited_by": 14,
-     "problem": "groundwater",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Heavy Metals Like Aluminum, Arsenic, Cadmium, Chromium, Copper, Iron, Lead, Manganese, Mercury, Nickel, and Zinc Polluting the Drinking Water: Their Individual Health Hazards",
-     "date": "2025-12-01",
-     "source": "International Journal of Molecular Sciences",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/ijms262311656",
-     "cited_by": 30,
      "problem": "groundwater",
      "status": "corroborating"
     }
@@ -1898,7 +1926,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
    },
-   "new_papers_12m": 71,
+   "new_papers_12m": 72,
    "evidence": [
     {
      "tier": "research",
