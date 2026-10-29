@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-28T02:08+00:00",
+ "generated_at": "2026-10-29T02:18+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-09-29",
   "2026-09-30",
   "2026-10-01",
   "2026-10-02",
@@ -43,7 +42,8 @@
   "2026-10-25",
   "2026-10-26",
   "2026-10-27",
-  "2026-10-28"
+  "2026-10-28",
+  "2026-10-29"
  ],
  "daily_signals": {
   "supply": [
@@ -221,7 +221,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
    },
-   "new_papers_12m": 169,
+   "new_papers_12m": 174,
    "evidence": [
     {
      "tier": "research",
@@ -352,7 +352,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 83243,
+   "new_papers_12m": 83564,
    "evidence": [
     {
      "tier": "research",
@@ -383,7 +383,7 @@
      "source": "Artificial Intelligence Review",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 178,
+     "cited_by": 181,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -394,7 +394,7 @@
      "source": "Phytochemistry Reviews",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11101-025-10194-7",
-     "cited_by": 172,
+     "cited_by": 175,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -405,7 +405,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 456,
+     "cited_by": 461,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -484,7 +484,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1498,
+   "new_papers_12m": 1514,
    "evidence": [
     {
      "tier": "research",
@@ -616,7 +616,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
    },
-   "new_papers_12m": 661,
+   "new_papers_12m": 676,
    "evidence": [
     {
      "tier": "research",
@@ -748,7 +748,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
    },
-   "new_papers_12m": 189,
+   "new_papers_12m": 192,
    "evidence": [
     {
      "tier": "research",
@@ -757,7 +757,7 @@
      "source": "Journal of Sustainable Metallurgy",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s40831-026-01439-6",
-     "cited_by": 22,
+     "cited_by": 23,
      "problem": "battery-recycling",
      "status": "corroborating"
     },
@@ -880,7 +880,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 564,
+   "new_papers_12m": 570,
    "evidence": [
     {
      "tier": "research",
@@ -1012,7 +1012,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
    },
-   "new_papers_12m": 670,
+   "new_papers_12m": 681,
    "evidence": [
     {
      "tier": "research",
@@ -1146,7 +1146,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
    },
-   "new_papers_12m": 110,
+   "new_papers_12m": 111,
    "evidence": [
     {
      "tier": "research",
@@ -1278,7 +1278,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 223,
+   "new_papers_12m": 232,
    "evidence": [
     {
      "tier": "research",
@@ -1293,11 +1293,11 @@
     },
     {
      "tier": "research",
-     "title": "Challenges and strategies for globally resilient shrimp aquaculture",
-     "date": "2026-03-13",
-     "source": "npj Science of Food",
+     "title": "Family business performance: the role of dynamic capabilities, entrepreneurial orientation, and socioemotional wealth",
+     "date": "2026-02-07",
+     "source": "Review of Managerial Science",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1038/s41538-026-00787-7",
+     "doi_or_url": "https://doi.org/10.1007/s11846-026-00992-4",
      "cited_by": 5,
      "problem": "household-debt",
      "status": "corroborating"
@@ -1320,7 +1320,7 @@
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su172310799",
-     "cited_by": 9,
+     "cited_by": 10,
      "problem": "household-debt",
      "status": "corroborating"
     },
@@ -1409,7 +1409,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
    },
-   "new_papers_12m": 38,
+   "new_papers_12m": 40,
    "evidence": [
     {
      "tier": "research",
@@ -1540,7 +1540,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6293,
+   "new_papers_12m": 6349,
    "evidence": [
     {
      "tier": "research",
@@ -1670,7 +1670,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
    },
-   "new_papers_12m": 88,
+   "new_papers_12m": 89,
    "evidence": [
     {
      "tier": "research",
@@ -1723,7 +1723,7 @@
      "source": "BMJ Supportive & Palliative Care",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1136/spcare-2025-005738",
-     "cited_by": 3,
+     "cited_by": 4,
      "problem": "rural-doctors",
      "status": "corroborating"
     }
@@ -1793,7 +1793,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 365,
+   "new_papers_12m": 373,
    "evidence": [
     {
      "tier": "research",
