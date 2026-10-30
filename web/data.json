@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-29T02:18+00:00",
+ "generated_at": "2026-10-30T02:32+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-09-30",
   "2026-10-01",
   "2026-10-02",
   "2026-10-03",
@@ -43,7 +42,8 @@
   "2026-10-26",
   "2026-10-27",
   "2026-10-28",
-  "2026-10-29"
+  "2026-10-29",
+  "2026-10-30"
  ],
  "daily_signals": {
   "supply": [
@@ -144,7 +144,7 @@
   ]
  },
  "evidence_status": {
-  "corroborating": 70
+  "corroborating": 65
  },
  "new_evidence_today": 0,
  "problems": [
@@ -221,7 +221,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
    },
-   "new_papers_12m": 174,
+   "new_papers_12m": 172,
    "evidence": [
     {
      "tier": "research",
@@ -252,7 +252,7 @@
      "source": "Evidence-Based Dentistry",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41432-025-01200-0",
-     "cited_by": 6,
+     "cited_by": 7,
      "problem": "elder-care",
      "status": "corroborating"
     },
@@ -352,7 +352,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 83564,
+   "new_papers_12m": 83879,
    "evidence": [
     {
      "tier": "research",
@@ -372,7 +372,7 @@
      "source": "Meta-Radiology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.metrad.2025.100190",
-     "cited_by": 149,
+     "cited_by": 150,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -394,7 +394,7 @@
      "source": "Phytochemistry Reviews",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11101-025-10194-7",
-     "cited_by": 175,
+     "cited_by": 177,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -405,7 +405,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 461,
+     "cited_by": 463,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -484,7 +484,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1514,
+   "new_papers_12m": 1519,
    "evidence": [
     {
      "tier": "research",
@@ -493,7 +493,7 @@
      "source": "Processes",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/pr14030513",
-     "cited_by": 16,
+     "cited_by": 17,
      "problem": "ai-jobs",
      "status": "corroborating"
     },
@@ -616,7 +616,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
    },
-   "new_papers_12m": 676,
+   "new_papers_12m": 679,
    "evidence": [
     {
      "tier": "research",
@@ -748,7 +748,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
    },
-   "new_papers_12m": 192,
+   "new_papers_12m": 190,
    "evidence": [
     {
      "tier": "research",
@@ -880,64 +880,8 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 570,
-   "evidence": [
-    {
-     "tier": "research",
-     "title": "OM Forum—Supply Chain Management in the AI Era: A Vision Statement from the Operations Management Community",
-     "date": "2026-03-26",
-     "source": "Manufacturing & Service Operations Management",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1287/msom.2025.1065",
-     "cited_by": 15,
-     "problem": "semiconductor-skills",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Reviewing the socio-technical dynamics of AI, data centers and digitalization on energy and the environment",
-     "date": "2026-03-12",
-     "source": "Renewable and Sustainable Energy Reviews",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1016/j.rser.2026.116861",
-     "cited_by": 18,
-     "problem": "semiconductor-skills",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Adaptive and risk recovery strategies for enhancing supply chain network resilience: a cascading failure perspective",
-     "date": "2026-02-16",
-     "source": "Annals of Operations Research",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s10479-026-07070-8",
-     "cited_by": 11,
-     "problem": "semiconductor-skills",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Artificial intelligence and robotics in predictive maintenance: a comprehensive review",
-     "date": "2026-01-07",
-     "source": "Frontiers in Mechanical Engineering",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3389/fmech.2025.1722114",
-     "cited_by": 18,
-     "problem": "semiconductor-skills",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Balancing Innovation and Control: The European Union AI Act in an Era of Global Uncertainty",
-     "date": "2025-10-30",
-     "source": "JMIR AI",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.2196/75527",
-     "cited_by": 20,
-     "problem": "semiconductor-skills",
-     "status": "corroborating"
-    }
-   ]
+   "new_papers_12m": null,
+   "evidence": []
   },
   {
    "id": "food-loss",
@@ -1146,7 +1090,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
    },
-   "new_papers_12m": 111,
+   "new_papers_12m": 112,
    "evidence": [
     {
      "tier": "research",
@@ -1278,7 +1222,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 232,
+   "new_papers_12m": 234,
    "evidence": [
     {
      "tier": "research",
@@ -1540,7 +1484,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6349,
+   "new_papers_12m": 6380,
    "evidence": [
     {
      "tier": "research",
@@ -1593,7 +1537,7 @@
      "source": "Frontiers in Sustainable Food Systems",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3389/fsufs.2025.1649834",
-     "cited_by": 24,
+     "cited_by": 25,
      "problem": "energy-security",
      "status": "corroborating"
     }
@@ -1670,7 +1614,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
    },
-   "new_papers_12m": 89,
+   "new_papers_12m": 88,
    "evidence": [
     {
      "tier": "research",
@@ -1793,7 +1737,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 373,
+   "new_papers_12m": 372,
    "evidence": [
     {
      "tier": "research",
