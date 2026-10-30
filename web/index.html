@@ -101,6 +101,29 @@ select { font: inherit; font-size: 13px; padding: 4px 8px; border-radius: 6px; b
 .gapbar i { position: absolute; inset: 0 auto 0 0; background: var(--accent); border-radius: 3px; }
 #spark { height: 60px; }
 
+.plan-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 16px; }
+@media (max-width: 900px) { .plan-grid { grid-template-columns: minmax(0, 1fr); } }
+.cause { display: grid; gap: 8px; padding-top: 10px; border-top: 1px solid var(--line); }
+.cause > b { font-family: var(--f-display); font-size: 15px; }
+.approach { font-size: 13px; color: var(--ink-2); }
+.quests { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.quest { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; font-size: 13px; }
+.quest .q { color: var(--ink); font-weight: 500; }
+.quest .meta { grid-column: 1 / -1; color: var(--muted); font-size: 12px; display: flex; flex-wrap: wrap; gap: 2px 12px; }
+.quest .who { font-size: 12px; padding: 2px 8px; border-radius: 4px; background: var(--accent-soft); color: var(--ink-2); white-space: nowrap; align-self: start; }
+.quest.open { border-color: var(--s2); }
+.labor { display: grid; gap: 10px; font-size: 13px; align-content: start; }
+.labor .big { font-family: var(--f-data); font-size: 28px; font-weight: 500; }
+.predict { display: grid; gap: 6px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; font-size: 13px; }
+.predict form { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.predict input { font: inherit; font-size: 13px; width: 11em; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.predict button { font: inherit; font-size: 13px; padding: 4px 12px; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent-soft); color: var(--ink); cursor: pointer; }
+.predict .res { color: var(--ink); }
+.plist { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: 13px; color: var(--ink-2); }
+.labor ul.plist { padding-left: 0; }
+.plist li span:not(.tag):not(.mono) { display: block; color: var(--muted); font-size: 12px; }
+.labor ul { margin: 0; padding-left: 18px; color: var(--ink-2); display: grid; gap: 4px; }
+
 .ev { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .ev li { display: grid; gap: 4px; padding-top: 8px; border-top: 1px solid var(--line); font-size: 13px; }
 .ev .t { color: var(--ink); }
@@ -170,6 +193,22 @@ footer { color: var(--muted); font-size: 12px; }
 
     <aside class="panel dossier" id="dossier" aria-live="polite"></aside>
   </div>
+
+  <section class="panel" id="plan-panel">
+    <div class="panel-head">
+      <h2>แผนลงมือ</h2>
+      <p>ปัญหา → สาเหตุย่อย → แนวทาง → เควสต์ที่คนทั่วไปหยิบไปทำได้ · กรอบสีส้ม = ยังไม่มีคนรับ · เควสต์ระดับเริ่มต้นไม่ต้องมีพื้นฐานมาก่อน</p>
+    </div>
+    <div id="plan"></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>รูปแบบร่วมข้ามปัญหา</h2>
+      <p>รวมทุกปัญหาที่แตกแผนแล้ว เพื่อดูว่าต้นเหตุและทักษะไหนเกิดซ้ำข้าม silo</p>
+    </div>
+    <div id="patterns"></div>
+  </section>
 
   <div class="lower">
     <section class="panel">
@@ -347,6 +386,7 @@ footer { color: var(--muted); font-size: 12px; }
   function renderDossier() {
     const p = data.problems.find(x => x.id === selected);
     const el = $("dossier");
+    renderPlan(p);
     if (!p) { el.innerHTML = '<p class="err">ไม่มีปัญหาตรงกับตัวกรองนี้</p>'; return; }
     const gapPct = Math.round(100 * p.supply.value / p.demand.value);
     el.innerHTML =
@@ -373,6 +413,65 @@ footer { color: var(--muted); font-size: 12px; }
       series: [{ type: "line", data: p.signals, symbol: "none", lineStyle: { width: 2, color: css("--accent") }, areaStyle: { color: css("--accent"), opacity: 0.12 },
         markPoint: { symbol: "circle", symbolSize: 8, itemStyle: { color: css("--accent") }, label: { show: true, position: "right", color: css("--ink-2"), fontFamily: css("--f-data"), fontSize: 11 }, data: [{ coord: [last, p.signals[last]], value: p.signals[last] }] } }]
     });
+  }
+
+  function guessKey(p, i) { return "oq-guess:" + p.id + ":" + i; }
+  function loadGuess(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function saveGuess(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
+  function predictHtml(p, x, i) {
+    const g = loadGuess(guessKey(p, i));
+    let res = "";
+    if (g !== null && g !== "") {
+      if (x.answer == null) res = '<span class="res">คำตอบของคุณ ' + fmt(+g) + " " + esc(x.unit) + " · ยังไม่มีข้อมูลจริงให้เทียบ</span>";
+      else {
+        const diff = Math.round(100 * (+g - x.answer) / x.answer);
+        res = '<span class="res">คุณทาย ' + fmt(+g) + " · ข้อมูลบอก <b>" + fmt(x.answer) + "</b> " + esc(x.unit) + " · " + (diff === 0 ? "ตรงพอดี" : (diff > 0 ? "สูงไป " : "ต่ำไป ") + Math.abs(diff) + "%") + "</span>";
+      }
+    }
+    return '<li class="predict"><span>' + esc(x.q) + '</span><form data-i="' + i + '"><input type="number" inputmode="decimal" aria-label="คำตอบของคุณ" placeholder="คำตอบของคุณ" value="' + esc(g ?? "") + '"><span class="label">' + esc(x.unit) + '</span><button type="submit">ดูคำตอบ</button></form>' + res + '<span class="label">' + esc(x.source) + "</span></li>";
+  }
+
+  function renderPatterns() {
+    const pt = data.patterns;
+    if (!pt) return;
+    const title = id => esc((data.problems.find(x => x.id === id) || {}).title || id);
+    const shared = Object.entries(pt.why_unsolved).filter(([, ids]) => ids.length > 1).sort((a, b) => b[1].length - a[1].length);
+    const fields = Object.entries(pt.fields).sort((a, b) => b[1].quests - a[1].quests);
+    $("patterns").innerHTML = '<div class="plan-grid"><div class="labor"><span class="label">เหตุผลที่ยังแก้ไม่ได้ซึ่งเกิดซ้ำในหลายปัญหา</span><ul class="plist">' +
+      shared.map(([k, ids]) => "<li><b>" + esc(k) + "</b> · " + ids.length + " ปัญหา<span>" + ids.map(title).join(", ") + "</span></li>").join("") + "</ul></div>" +
+      '<div class="labor"><span class="label">สาขาที่เควสต์ต้องใช้ (นับจำนวนเควสต์)</span><ul class="plist">' +
+      fields.map(([k, v]) => "<li><b>" + esc(k) + '</b> <span class="mono">' + v.quests + "</span> · " + v.problems.length + " ปัญหา</li>").join("") + "</ul>" +
+      '<span class="label">ไม่มีใครต้องเก่งทุกสาขา เควสต์แต่ละชิ้นใช้ 1–2 สาขา สาขาที่ถูกใช้ซ้ำในหลายปัญหาคือหัวข้อที่ควรเปิดพื้นที่ upskill ก่อน</span></div></div>';
+  }
+
+  function renderPlan(p) {
+    const el = $("plan");
+    renderPatterns();
+    const pl = p && p.plan;
+    if (!pl) { el.innerHTML = '<p class="err">ปัญหานี้ยังไม่ได้แตกเป็นแผนลงมือ ตอนนี้มีตัวอย่างเรื่องผู้ดูแลผู้สูงอายุ ฝุ่น PM2.5 และหนี้ครัวเรือน</p>'; return; }
+    const lb = pl.labor || {};
+    el.innerHTML = '<div class="plan-grid"><div style="display:grid;gap:12px">' +
+      (pl.predict ? '<div class="cause"><b>ทายก่อนดูข้อมูล</b><span class="approach">เขียนคำตอบของคุณก่อน แล้วค่อยเทียบ จะเห็นว่าความรู้สึกเราพลาดไปทางไหน</span><ul class="quests">' + pl.predict.map((x, i) => predictHtml(p, x, i)).join("") + "</ul></div>" : "") +
+      (pl.why_unsolved ? '<div class="cause"><b>ทำไมยังไม่มีใครแก้</b><ul class="plist">' + pl.why_unsolved.map(w => '<li><span class="tag">' + esc(w.type) + "</span> " + esc(w.text) + "</li>").join("") + "</ul></div>" : "") +
+      '<div class="tierline"><span class="tag">เควสต์ทั้งหมด <b class="mono">' + pl.quest_count + '</b></span><span class="tag">ยังไม่มีคนรับ <b class="mono">' + pl.open_quests + '</b></span><span class="tag">ทำเสร็จแล้ว <b class="mono">' + pl.done_quests + '</b> ครั้ง</span></div>' +
+      pl.causes.map(c => '<div class="cause"><b>' + esc(c.title) + '</b>' + c.approaches.map(a =>
+        '<span class="approach">แนวทาง: ' + esc(a.title) + (a.kind ? ' <span class="tag">' + esc(a.kind) + '</span>' : '') + '</span><ul class="quests">' + a.quests.map(q =>
+          '<li class="quest' + (q.takers ? "" : " open") + '"><span class="q">' + esc(q.title) + '</span><span class="who">' + esc(q.who) + '</span>' +
+          '<span class="meta">' + (q.level ? '<span>ระดับ: ' + esc(q.level) + '</span>' : '') + (q.fields ? '<span>สาขา: ' + q.fields.map(esc).join(", ") + '</span>' : '') + '<span>ทักษะ: ' + esc(q.skill) + '</span><span>เวลา: ' + esc(q.effort) + '</span><span>ผลลัพธ์: ' + esc(q.output) + '</span><span>รับแล้ว ' + q.takers + ' · เสร็จ ' + q.done + '</span></span></li>').join("") + '</ul>').join("") + '</div>').join("") +
+      '</div><div class="labor"><span class="label">ตลาดงาน</span>' +
+      (lb.jobs_gap != null ? '<div><div class="big">' + fmt(lb.jobs_gap) + '</div><span class="label">ตำแหน่งงานที่ยังขาด (ผู้ทำงาน 1 คนต่อ ' + fmt(lb.people_per_worker) + " " + esc(p.demand.unit) + ')</span></div>'
+        : lb.workers_needed != null ? '<div><div class="big">' + fmt(lb.workers_needed) + '</div><span class="label">ตำแหน่งที่ต้องมีทั้งหมด (ผู้ทำงาน 1 คนต่อ ' + fmt(lb.people_per_worker) + " " + esc(p.demand.unit) + ') ยังไม่รู้ว่ามีอยู่แล้วกี่คน</span></div>' : "") +
+      '<div><span class="label">อาชีพที่เกี่ยวข้อง</span><ul>' + (lb.occupations || []).map(o => '<li>' + esc(o.name) + ' <span class="mono">' + esc(o.code) + '</span></li>').join("") + '</ul></div>' +
+      '<div><span class="label">ข้อมูลที่ต้องเก็บ</span><ul>' + (lb.data_sources || []).map(d => '<li>' + esc(d.name) + ' · ' + esc(d.measures) + '</li>').join("") + '</ul></div>' +
+      (lb.note ? '<span class="label">' + esc(lb.note) + '</span>' : "") + '</div></div>';
+    el.querySelectorAll("form[data-i]").forEach(fm => fm.addEventListener("submit", ev => {
+      ev.preventDefault();
+      const v = fm.querySelector("input").value;
+      if (v === "") return;
+      saveGuess(guessKey(p, fm.dataset.i), v);
+      renderPlan(p);
+    }));
   }
 
   function renderPipeline() {

@@ -1,6 +1,6 @@
 {
- "is_sample": false,
- "generated_at": "2026-10-30T02:32+00:00",
+ "is_sample": true,
+ "generated_at": "2026-10-20T05:21+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,6 +14,16 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
+  "2026-09-21",
+  "2026-09-22",
+  "2026-09-23",
+  "2026-09-24",
+  "2026-09-25",
+  "2026-09-26",
+  "2026-09-27",
+  "2026-09-28",
+  "2026-09-29",
+  "2026-09-30",
   "2026-10-01",
   "2026-10-02",
   "2026-10-03",
@@ -33,120 +43,218 @@
   "2026-10-17",
   "2026-10-18",
   "2026-10-19",
-  "2026-10-20",
-  "2026-10-21",
-  "2026-10-22",
-  "2026-10-23",
-  "2026-10-24",
-  "2026-10-25",
-  "2026-10-26",
-  "2026-10-27",
-  "2026-10-28",
-  "2026-10-29",
-  "2026-10-30"
+  "2026-10-20"
  ],
  "daily_signals": {
   "supply": [
-   61,
-   61,
-   61,
-   70,
-   62,
-   62,
-   57,
-   55,
-   56,
-   62,
-   58,
-   63,
-   74,
-   72,
+   64,
+   65,
    67,
-   72,
-   72,
-   69,
+   73,
+   65,
+   65,
+   63,
+   54,
+   57,
+   57,
+   59,
+   61,
+   66,
+   63,
+   70,
+   60,
+   56,
+   55,
+   59,
+   61,
+   58,
+   60,
+   61,
+   66,
+   65,
+   70,
+   73,
    71,
-   69,
-   69,
-   71,
-   69,
-   76,
-   76,
-   79,
-   83,
-   92,
-   90,
-   98
+   74,
+   84
   ],
   "access": [
-   42,
-   44,
-   43,
-   43,
-   44,
-   43,
-   42,
-   44,
+   48,
+   48,
+   46,
+   52,
    47,
-   44,
-   39,
-   39,
-   44,
-   34,
-   36,
-   37,
+   52,
+   52,
    45,
-   37,
-   33,
-   29,
-   29,
-   30,
-   31,
-   34,
-   34,
-   38,
-   34,
-   34,
-   30,
-   37
-  ],
-  "systemic": [
+   51,
+   46,
+   51,
+   53,
+   58,
    63,
+   66,
+   67,
+   67,
    65,
    72,
    74,
-   77,
-   71,
-   66,
-   66,
-   68,
-   68,
-   79,
-   77,
-   78,
+   82,
    80,
-   80,
+   82,
    78,
-   73,
    76,
-   72,
-   72,
    74,
-   73,
-   76,
-   79,
-   79,
-   81,
-   76,
-   81,
-   79,
-   84
+   69,
+   71,
+   74,
+   79
+  ],
+  "systemic": [
+   69,
+   74,
+   74,
+   75,
+   78,
+   86,
+   95,
+   94,
+   95,
+   103,
+   97,
+   99,
+   114,
+   121,
+   122,
+   122,
+   123,
+   125,
+   122,
+   127,
+   120,
+   129,
+   128,
+   137,
+   134,
+   140,
+   141,
+   141,
+   140,
+   139
   ]
  },
  "evidence_status": {
-  "corroborating": 65
+  "corroborating": 31,
+  "disputed": 3,
+  "verified": 17,
+  "unverified": 11
  },
- "new_evidence_today": 0,
+ "new_evidence_today": 7,
+ "patterns": {
+  "why_unsolved": {
+   "แรงจูงใจ": [
+    "elder-care",
+    "household-debt"
+   ],
+   "ต้นทุน": [
+    "elder-care",
+    "household-debt",
+    "pm25"
+   ],
+   "เจ้าภาพ": [
+    "elder-care",
+    "pm25"
+   ],
+   "ข้อมูล": [
+    "elder-care",
+    "household-debt"
+   ],
+   "พฤติกรรม": [
+    "household-debt"
+   ],
+   "วงจรหนี้": [
+    "household-debt"
+   ],
+   "ผลกระทบภายนอก": [
+    "pm25"
+   ],
+   "ข้ามพรมแดน": [
+    "pm25"
+   ],
+   "ความสนใจ": [
+    "pm25"
+   ]
+  },
+  "fields": {
+   "เศรษฐศาสตร์": {
+    "quests": 9,
+    "problems": [
+     "elder-care",
+     "household-debt",
+     "pm25"
+    ]
+   },
+   "จิตวิทยา": {
+    "quests": 5,
+    "problems": [
+     "elder-care",
+     "household-debt",
+     "pm25"
+    ]
+   },
+   "การศึกษา": {
+    "quests": 5,
+    "problems": [
+     "elder-care",
+     "household-debt",
+     "pm25"
+    ]
+   },
+   "ผู้ประกอบการ": {
+    "quests": 2,
+    "problems": [
+     "elder-care",
+     "pm25"
+    ]
+   },
+   "ภาวะผู้นำ": {
+    "quests": 3,
+    "problems": [
+     "elder-care",
+     "household-debt",
+     "pm25"
+    ]
+   },
+   "วิทยาศาสตร์ข้อมูล": {
+    "quests": 4,
+    "problems": [
+     "elder-care",
+     "household-debt",
+     "pm25"
+    ]
+   },
+   "วิศวกรรม": {
+    "quests": 4,
+    "problems": [
+     "elder-care",
+     "pm25"
+    ]
+   },
+   "กฎหมาย": {
+    "quests": 3,
+    "problems": [
+     "household-debt",
+     "pm25"
+    ]
+   },
+   "รัฐศาสตร์": {
+    "quests": 3,
+    "problems": [
+     "pm25"
+    ]
+   }
+  }
+ },
  "problems": [
   {
    "id": "elder-care",
@@ -213,69 +321,274 @@
     21,
     25
    ],
-   "indicator": {
-    "indicator": "SP.POP.65UP.TO.ZS",
-    "name": "Population ages 65 and above (% of total population)",
-    "year": 2025,
-    "value": 16.017421033045,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
+   "indicator": null,
+   "new_papers_12m": null,
+   "plan": {
+    "labor": {
+     "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้",
+     "occupations": [
+      {
+       "code": "ISCO-08 5322",
+       "name": "ผู้ดูแลส่วนบุคคลที่บ้าน"
+      },
+      {
+       "code": "ISCO-08 5321",
+       "name": "ผู้ช่วยดูแลด้านสุขภาพ"
+      }
+     ],
+     "people_per_worker": 2.0,
+     "data_sources": [
+      {
+       "name": "การสำรวจภาวะการทำงานของประชากร (สสช.)",
+       "measures": "จำนวนผู้ทำงานตามอาชีพ รายไตรมาส",
+       "status": "todo"
+      },
+      {
+       "name": "ตำแหน่งงานว่าง กรมการจัดหางาน",
+       "measures": "ความต้องการแรงงานที่นายจ้างประกาศ",
+       "status": "todo"
+      },
+      {
+       "name": "ประกาศงานจากเว็บหางาน (เก็บเองเป็นตัวอย่าง)",
+       "measures": "ค่าจ้าง ทักษะที่นายจ้างขอ",
+       "status": "todo"
+      },
+      {
+       "name": "สัมภาษณ์ผู้ดูแลและครอบครัว 10 คน",
+       "measures": "สิ่งที่ตัวเลขทางการไม่เห็น",
+       "status": "todo"
+      }
+     ],
+     "current_workers": 410000,
+     "workers_needed": 600000,
+     "jobs_gap": 190000
+    },
+    "causes": [
+     {
+      "title": "ค่าแรงต่ำ คนไม่อยากทำอาชีพนี้",
+      "approaches": [
+       {
+        "title": "ทำให้รายได้ผู้ดูแลชัดและมั่นคงขึ้น",
+        "quests": [
+         {
+          "title": "เก็บค่าจ้างผู้ดูแลจากประกาศงาน 50 ประกาศ",
+          "who": "บุคคล",
+          "skill": "ค้นข้อมูล, ใช้สเปรดชีต",
+          "effort": "4 ชม.",
+          "output": "ตารางค่าจ้างตามจังหวัด 50 แถว",
+          "takers": 3,
+          "done": 1,
+          "level": "เริ่มต้น",
+          "fields": [
+           "เศรษฐศาสตร์"
+          ]
+         },
+         {
+          "title": "สัมภาษณ์ผู้ดูแล 5 คนเรื่องรายได้และภาระงาน",
+          "who": "บุคคล",
+          "skill": "สัมภาษณ์",
+          "effort": "1 สัปดาห์",
+          "output": "บันทึกสัมภาษณ์ 5 ชุด",
+          "takers": 1,
+          "done": 0,
+          "level": "เริ่มต้น",
+          "fields": [
+           "จิตวิทยา"
+          ]
+         },
+         {
+          "title": "ออกแบบแพ็กเกจจ้างผู้ดูแลแบบรายชั่วโมงร่วมกันหลายครอบครัว",
+          "who": "บริษัท / สตาร์ทอัพ",
+          "skill": "ออกแบบบริการ, การเงิน",
+          "effort": "1 เดือน",
+          "output": "ต้นแบบแพ็กเกจและราคาที่ทดลองกับ 3 ครอบครัว",
+          "takers": 0,
+          "done": 0,
+          "level": "ขั้นสูง",
+          "fields": [
+           "ผู้ประกอบการ",
+           "เศรษฐศาสตร์"
+          ]
+         }
+        ],
+        "kind": "แก้ต้นเหตุ"
+       }
+      ]
+     },
+     {
+      "title": "คนอยากเป็นผู้ดูแลแต่ไม่รู้จะอบรมที่ไหน",
+      "approaches": [
+       {
+        "title": "รวมหลักสูตรอบรมผู้ดูแลที่รับรองแล้วไว้ที่เดียว",
+        "quests": [
+         {
+          "title": "ลิสต์หลักสูตรผู้ดูแลผู้สูงอายุในจังหวัดของคุณ",
+          "who": "บุคคล",
+          "skill": "ค้นข้อมูล",
+          "effort": "2 ชม.",
+          "output": "รายชื่อหลักสูตร พร้อมลิงก์และค่าใช้จ่าย",
+          "takers": 6,
+          "done": 4,
+          "level": "เริ่มต้น",
+          "fields": [
+           "การศึกษา"
+          ]
+         },
+         {
+          "title": "เปิดรอบอบรมผู้ดูแลในตำบล",
+          "who": "ชุมชน / รพ.สต.",
+          "skill": "ประสานงาน",
+          "effort": "2 เดือน",
+          "output": "ผู้ผ่านอบรม 20 คน",
+          "takers": 1,
+          "done": 0,
+          "level": "ขั้นกลาง",
+          "fields": [
+           "ภาวะผู้นำ",
+           "การศึกษา"
+          ]
+         }
+        ],
+        "kind": "สร้างความสามารถ"
+       }
+      ]
+     },
+     {
+      "title": "ครอบครัวเล็กลง ลูกหลานย้ายไปทำงานในเมือง",
+      "approaches": [
+       {
+        "title": "จับคู่ผู้ดูแลในชุมชนกับผู้สูงอายุที่อยู่ลำพัง",
+        "quests": [
+         {
+          "title": "สำรวจผู้สูงอายุติดบ้านในตำบล 20 หลัง",
+          "who": "ชุมชน / อสม.",
+          "skill": "สำรวจภาคสนาม",
+          "effort": "2 สัปดาห์",
+          "output": "ข้อมูล 20 ครัวเรือน: ใครดูแล ต้องการอะไร",
+          "takers": 2,
+          "done": 1,
+          "level": "เริ่มต้น",
+          "fields": [
+           "วิทยาศาสตร์ข้อมูล"
+          ]
+         },
+         {
+          "title": "ทำต้นแบบระบบจับคู่ผู้ดูแลกับครอบครัว",
+          "who": "บุคคล / นักพัฒนา",
+          "skill": "เขียนโปรแกรม, ออกแบบ UX",
+          "effort": "1 เดือน",
+          "output": "เว็บต้นแบบที่ทดลองกับ 1 ตำบล",
+          "takers": 0,
+          "done": 0,
+          "level": "ขั้นสูง",
+          "fields": [
+           "วิศวกรรม",
+           "จิตวิทยา"
+          ]
+         }
+        ],
+        "kind": "แก้ต้นเหตุ"
+       }
+      ]
+     }
+    ],
+    "predict": [
+     {
+      "q": "ผู้สูงอายุไทยที่ต้องมีคนดูแลมีประมาณกี่คน",
+      "unit": "คน",
+      "answer": 1200000,
+      "source": "ค่าสมมติ ต้องแทนด้วยข้อมูลกรมกิจการผู้สูงอายุ / สสช."
+     },
+     {
+      "q": "ผู้ดูแลที่ผ่านการอบรมมีประมาณกี่คน",
+      "unit": "คน",
+      "answer": 410000,
+      "source": "ค่าสมมติ ต้องแทนด้วยข้อมูลกรมอนามัย"
+     }
+    ],
+    "why_unsolved": [
+     {
+      "type": "แรงจูงใจ",
+      "text": "งานดูแลถูกมองว่าเป็นหน้าที่ของครอบครัว จึงไม่ค่อยมีใครจ่ายค่าแรงให้ในราคาตลาด"
+     },
+     {
+      "type": "ต้นทุน",
+      "text": "ครอบครัวรายได้ปานกลางจ่ายค่าผู้ดูแลเต็มเวลาไม่ไหว แต่ระบบจ้างรายชั่วโมงยังมีน้อย"
+     },
+     {
+      "type": "เจ้าภาพ",
+      "text": "ความรับผิดชอบกระจายอยู่หลายหน่วยงาน ทั้งสาธารณสุข พัฒนาสังคม และท้องถิ่น"
+     },
+     {
+      "type": "ข้อมูล",
+      "text": "ยังไม่มีตัวเลขกลางว่าใครต้องการการดูแลระดับไหน จึงวางแผนกำลังคนยาก"
+     }
+    ],
+    "fields": {
+     "เศรษฐศาสตร์": 2,
+     "จิตวิทยา": 2,
+     "การศึกษา": 2,
+     "ผู้ประกอบการ": 1,
+     "ภาวะผู้นำ": 1,
+     "วิทยาศาสตร์ข้อมูล": 1,
+     "วิศวกรรม": 1
+    },
+    "quest_count": 7,
+    "open_quests": 2,
+    "done_quests": 6
    },
-   "new_papers_12m": 172,
    "evidence": [
     {
-     "tier": "research",
-     "title": "Economic burden of dengue in Puerto Rico, 2010–2023",
-     "date": "2026-01-27",
-     "source": "Infectious Diseases of Poverty",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1186/s40249-026-01412-1",
-     "cited_by": 6,
      "problem": "elder-care",
+     "tier": "news",
+     "title": "ข่าว: เหตุการณ์ล่าสุดที่เกี่ยวข้อง",
+     "date": "2026-10-20",
+     "source": "สำนักข่าว A",
+     "domain": "สำนักข่าว A",
+     "doi_or_url": null,
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "The anthropomorphization of AI and the concept of Buddhist compassion in human-machine interaction",
-     "date": "2026-01-14",
-     "source": "Frontiers in Psychology",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3389/fpsyg.2025.1583565",
-     "cited_by": 5,
      "problem": "elder-care",
+     "tier": "news",
+     "title": "ข่าว: นโยบายหรืองบประมาณใหม่",
+     "date": "2026-10-16",
+     "source": "สำนักข่าว B",
+     "domain": "สำนักข่าว B",
+     "doi_or_url": null,
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Barriers and facilitators in utilisation of dental health services across low- and middle-income countries: a scoping review",
-     "date": "2026-01-13",
-     "source": "Evidence-Based Dentistry",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1038/s41432-025-01200-0",
-     "cited_by": 7,
      "problem": "elder-care",
-     "status": "corroborating"
+     "tier": "news",
+     "title": "ข่าว: นโยบายหรืองบประมาณใหม่",
+     "date": "2026-10-13",
+     "source": "สำนักข่าว A",
+     "domain": "สำนักข่าว A",
+     "doi_or_url": null,
+     "status": "disputed",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)",
+     "note": "ตัวเลขในข่าวไม่ตรงกับแหล่งทางการ"
     },
     {
-     "tier": "research",
-     "title": "The epidemiology and spatial distribution of Taenia solium taeniosis and cysticercosis in Kenya: The case of Busia County",
-     "date": "2025-12-05",
-     "source": "PLoS neglected tropical diseases",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1371/journal.pntd.0013746",
-     "cited_by": 5,
      "problem": "elder-care",
-     "status": "corroborating"
+     "tier": "official",
+     "title": "รายงานประจำปีของหน่วยงานรัฐ",
+     "date": "2026-10-12",
+     "source": "สำนักงานสถิติแห่งชาติ",
+     "domain": "สำนักงานสถิติแห่งชาติ",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
     },
     {
-     "tier": "research",
-     "title": "Balancing patient choice and health system capacity: a system dynamics model of dialysis in Thailand",
-     "date": "2025-11-20",
-     "source": "BMC Medicine",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1186/s12916-025-04522-z",
-     "cited_by": 7,
      "problem": "elder-care",
+     "tier": "news",
+     "title": "ข่าว: เหตุการณ์ล่าสุดที่เกี่ยวข้อง",
+     "date": "2026-10-11",
+     "source": "สำนักข่าว C",
+     "domain": "สำนักข่าว C",
+     "doi_or_url": null,
      "status": "corroborating"
     }
    ]
@@ -313,101 +626,92 @@
     "value": 520000
    },
    "signals": [
+    11,
+    11,
+    11,
+    13,
+    10,
+    8,
     9,
-    11,
-    8,
-    11,
-    13,
-    14,
-    11,
-    10,
-    11,
+    5,
     10,
     8,
-    10,
-    12,
     11,
-    10,
-    12,
-    17,
-    14,
-    14,
-    12,
-    12,
     13,
-    13,
-    13,
-    14,
-    17,
+    15,
     16,
-    18,
+    19,
+    22,
     20,
-    23
+    18,
+    21,
+    21,
+    23,
+    20,
+    25,
+    21,
+    22,
+    23,
+    24,
+    23,
+    25,
+    26
    ],
-   "indicator": {
-    "indicator": "SH.STA.SUIC.P5",
-    "name": "Suicide mortality rate (per 100,000 population)",
-    "year": 2021,
-    "value": 16.59,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
-   },
-   "new_papers_12m": 83879,
+   "indicator": null,
+   "new_papers_12m": null,
+   "plan": null,
    "evidence": [
     {
-     "tier": "research",
-     "title": "Mean-Field Limit of Non-exchangeable Multi-agent Systems Over Hypergraphs with Unbounded Rank",
-     "date": "2026-10-23",
-     "source": "Journal of Nonlinear Science",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s00332-026-10338-9",
-     "cited_by": 241,
      "problem": "mental-health",
+     "tier": "news",
+     "title": "ข่าว: บริษัทเปิดตัวบริการใหม่",
+     "date": "2026-10-20",
+     "source": "สำนักข่าว B",
+     "domain": "สำนักข่าว B",
+     "doi_or_url": null,
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Prompt engineering for healthcare: Methodologies and applications",
-     "date": "2025-11-22",
-     "source": "Meta-Radiology",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1016/j.metrad.2025.100190",
-     "cited_by": 150,
      "problem": "mental-health",
+     "tier": "research",
+     "title": "งานวิจัยประเมินขนาดปัญหาถึงปี 2035",
+     "date": "2026-10-19",
+     "source": "OpenAlex",
+     "domain": "OpenAlex",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
+    },
+    {
+     "problem": "mental-health",
+     "tier": "official",
+     "title": "ตัวเลขทางการรอบล่าสุด",
+     "date": "2026-10-17",
+     "source": "สำนักงานสถิติแห่งชาติ",
+     "domain": "สำนักงานสถิติแห่งชาติ",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Agentic AI: a comprehensive survey of architectures, applications, and future directions",
-     "date": "2025-11-14",
-     "source": "Artificial Intelligence Review",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 181,
      "problem": "mental-health",
+     "tier": "news",
+     "title": "ข่าว: นโยบายหรืองบประมาณใหม่",
+     "date": "2026-10-15",
+     "source": "สำนักข่าว B",
+     "domain": "สำนักข่าว B",
+     "doi_or_url": null,
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Medicinal plants and human health: a comprehensive review of bioactive compounds, therapeutic effects, and applications",
-     "date": "2025-11-05",
-     "source": "Phytochemistry Reviews",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s11101-025-10194-7",
-     "cited_by": 177,
      "problem": "mental-health",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Global, regional, and national burden of chronic kidney disease in adults, 1990–2023, and its attributable risk factors: a systematic analysis for the Global Burden of Disease Study 2023",
-     "date": "2025-11-01",
-     "source": "The Lancet",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 463,
-     "problem": "mental-health",
-     "status": "corroborating"
+     "tier": "official",
+     "title": "รายงานประจำปีของหน่วยงานรัฐ",
+     "date": "2026-10-12",
+     "source": "UN SDG Database",
+     "domain": "UN SDG Database",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
     }
    ]
   },
@@ -446,100 +750,70 @@
    },
    "signals": [
     15,
+    20,
+    21,
+    19,
     16,
-    13,
-    15,
-    16,
-    12,
-    11,
-    5,
-    6,
-    6,
-    7,
-    6,
-    5,
-    5,
-    8,
-    5,
-    5,
-    5,
-    2,
-    0,
-    0,
-    0,
-    2,
-    1,
-    2,
-    7,
-    7,
-    8,
-    6,
-    5
+    18,
+    20,
+    18,
+    19,
+    23,
+    22,
+    21,
+    24,
+    27,
+    23,
+    23,
+    27,
+    27,
+    31,
+    34,
+    36,
+    39,
+    38,
+    44,
+    43,
+    47,
+    44,
+    45,
+    46,
+    53
    ],
-   "indicator": {
-    "indicator": "SL.UEM.1524.ZS",
-    "name": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)",
-    "year": 2025,
-    "value": 4.531,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
-   },
-   "new_papers_12m": 1519,
+   "indicator": null,
+   "new_papers_12m": null,
+   "plan": null,
    "evidence": [
     {
-     "tier": "research",
-     "title": "Integration of Artificial Intelligence in Food Processing Technologies",
-     "date": "2026-02-02",
-     "source": "Processes",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/pr14030513",
-     "cited_by": 17,
      "problem": "ai-jobs",
-     "status": "corroborating"
+     "tier": "research",
+     "title": "งานวิจัยเปรียบเทียบนโยบายใน 5 ประเทศ",
+     "date": "2026-10-20",
+     "source": "Crossref",
+     "domain": "Crossref",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
     },
     {
-     "tier": "research",
-     "title": "Retraining and Lifelong Learning as an Anti-Crisis Tool: Preserving Ukraine’s Intellectual Capital in Times of War",
-     "date": "2026-01-28",
-     "source": "Knowledge Economy and Lifelong Learning",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.61093/kell.2(1).48-66.2026",
-     "cited_by": 15,
      "problem": "ai-jobs",
-     "status": "corroborating"
+     "tier": "news",
+     "title": "ข่าว: นโยบายหรืองบประมาณใหม่",
+     "date": "2026-10-15",
+     "source": "สำนักข่าว A",
+     "domain": "สำนักข่าว A",
+     "doi_or_url": null,
+     "status": "unverified"
     },
     {
-     "tier": "research",
-     "title": "Technostress and generative AI in the workplace: a qualitative analysis of young professionals",
-     "date": "2025-12-12",
-     "source": "Frontiers in Artificial Intelligence",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3389/frai.2025.1728881",
-     "cited_by": 19,
      "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Technology-Driven Change in Human Resource Management: Reshaping Talent Management and Organizational Design",
-     "date": "2025-11-19",
-     "source": "Administrative Sciences",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/admsci15110452",
-     "cited_by": 16,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Strategic Human Resource Management in the Digital Era: Technology, Transformation, and Sustainable Advantage",
-     "date": "2025-11-11",
-     "source": "Merits",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/merits5040023",
-     "cited_by": 31,
-     "problem": "ai-jobs",
-     "status": "corroborating"
+     "tier": "social",
+     "title": "กระทู้บ่นปัญหาที่คนแชร์มาก",
+     "date": "2026-10-12",
+     "source": "X",
+     "domain": "X",
+     "doi_or_url": null,
+     "status": "unverified"
     }
    ]
   },
@@ -577,100 +851,70 @@
     "value": 1700000
    },
    "signals": [
-    13,
+    14,
     13,
     15,
-    13,
-    13,
-    11,
-    14,
-    16,
-    16,
-    14,
-    18,
-    19,
-    22,
-    16,
-    19,
-    21,
-    22,
+    15,
     20,
+    22,
+    23,
+    21,
+    21,
+    19,
+    19,
+    15,
+    18,
     16,
+    17,
     16,
     15,
+    16,
+    17,
+    16,
+    20,
+    20,
+    17,
+    18,
     14,
-    13,
-    12,
+    11,
     9,
-    10,
-    10,
-    6,
-    6,
-    6
+    11,
+    13,
+    15
    ],
-   "indicator": {
-    "indicator": "FB.BNK.CAPA.ZS",
-    "name": "Bank capital to assets ratio (%)",
-    "year": 2024,
-    "value": 11.125634912273,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
-   },
-   "new_papers_12m": 679,
+   "indicator": null,
+   "new_papers_12m": null,
+   "plan": null,
    "evidence": [
     {
-     "tier": "research",
-     "title": "The Application of Artificial Intelligence (AI) in the Implementation of ESG-Oriented Sustainable Development Strategies in the Banking Sector: A Case Study",
-     "date": "2026-01-10",
-     "source": "Sustainability",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/su18020732",
-     "cited_by": 17,
      "problem": "sme-credit",
+     "tier": "news",
+     "title": "ข่าว: บริษัทเปิดตัวบริการใหม่",
+     "date": "2026-10-15",
+     "source": "GDELT",
+     "domain": "GDELT",
+     "doi_or_url": null,
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Bridging the Energy Gap in ASEAN : Scaling Green Finance and Carbon Markets for a Sustainable Transition",
-     "date": "2026-01-05",
-     "source": "Wiley Interdisciplinary Reviews Energy and Environment",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1002/wene.70020",
-     "cited_by": 10,
      "problem": "sme-credit",
-     "status": "corroborating"
+     "tier": "official",
+     "title": "รายงานประจำปีของหน่วยงานรัฐ",
+     "date": "2026-10-13",
+     "source": "World Bank WDI",
+     "domain": "World Bank WDI",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
     },
     {
-     "tier": "research",
-     "title": "ESG strategic intensity and AI capability impact on risk-adjusted lending performance; mediating role of credit-risk discipline in ASEAN banks",
-     "date": "2026-01-02",
-     "source": "Future Business Journal",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1186/s43093-025-00710-8",
-     "cited_by": 10,
      "problem": "sme-credit",
-     "status": "corroborating"
-    },
-    {
      "tier": "research",
-     "title": "Economic Growth and Sustainable Development: The Role of Financial Inclusion, FinTech , Eco‐Innovation, and Economic Complexity",
-     "date": "2025-11-06",
-     "source": "Sustainable Development",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1002/sd.70322",
-     "cited_by": 15,
-     "problem": "sme-credit",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "The Role of Green Finance in Investing in Environmentally Friendly Technologies: Risks and Returns",
-     "date": "2025-10-30",
-     "source": "Sustainability",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/su17219652",
-     "cited_by": 12,
-     "problem": "sme-credit",
+     "title": "งานวิจัยประเมินขนาดปัญหาถึงปี 2035",
+     "date": "2026-10-11",
+     "source": "PubMed",
+     "domain": "PubMed",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
      "status": "corroborating"
     }
    ]
@@ -709,100 +953,100 @@
     "value": 15000
    },
    "signals": [
-    11,
-    10,
-    6,
-    8,
-    7,
-    10,
-    9,
     12,
-    8,
-    9,
-    8,
-    7,
+    12,
+    11,
+    12,
+    12,
     12,
     13,
-    16,
-    15,
-    16,
-    20,
+    13,
+    17,
+    18,
+    22,
+    23,
+    22,
+    21,
+    24,
+    23,
+    22,
     20,
     18,
+    18,
     17,
-    16,
-    16,
-    20,
-    16,
-    14,
-    16,
-    16,
-    13,
-    13
+    18,
+    17,
+    19,
+    18,
+    19,
+    21,
+    21,
+    22,
+    23
    ],
-   "indicator": {
-    "indicator": "EG.FEC.RNEW.ZS",
-    "name": "Renewable energy consumption (% of total final energy consumption)",
-    "year": 2021,
-    "value": 19,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
-   },
-   "new_papers_12m": 190,
+   "indicator": null,
+   "new_papers_12m": null,
+   "plan": null,
    "evidence": [
     {
-     "tier": "research",
-     "title": "A Review of Nickel and Cobalt from Laterite Ores: Toward Sustainable Extraction Pathways for the Battery Industry",
-     "date": "2026-02-21",
-     "source": "Journal of Sustainable Metallurgy",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s40831-026-01439-6",
-     "cited_by": 23,
      "problem": "battery-recycling",
+     "tier": "research",
+     "title": "บทความทบทวนวรรณกรรม (systematic review)",
+     "date": "2026-10-18",
+     "source": "Crossref",
+     "domain": "Crossref",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
+    },
+    {
+     "problem": "battery-recycling",
+     "tier": "news",
+     "title": "ข่าว: นโยบายหรืองบประมาณใหม่",
+     "date": "2026-10-16",
+     "source": "GDELT",
+     "domain": "GDELT",
+     "doi_or_url": null,
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Techno economic and environmental evaluation of second life battery PV hybrid charging stations for sustainable e-mobility in tropical regions",
-     "date": "2026-02-10",
-     "source": "Scientific Reports",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1038/s41598-026-39034-0",
-     "cited_by": 16,
      "problem": "battery-recycling",
+     "tier": "news",
+     "title": "ข่าว: เหตุการณ์ล่าสุดที่เกี่ยวข้อง",
+     "date": "2026-10-16",
+     "source": "สำนักข่าว B",
+     "domain": "สำนักข่าว B",
+     "doi_or_url": null,
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Assessing tin demand and supply pressures under terawatt-scale photovoltaic deployment",
-     "date": "2026-01-01",
-     "source": "RSC Sustainability",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1039/d5su00956a",
-     "cited_by": 22,
      "problem": "battery-recycling",
+     "tier": "news",
+     "title": "ข่าว: บริษัทเปิดตัวบริการใหม่",
+     "date": "2026-10-15",
+     "source": "สำนักข่าว C",
+     "domain": "สำนักข่าว C",
+     "doi_or_url": null,
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Advances in Building Energy Management: A Comprehensive Review",
-     "date": "2025-11-24",
-     "source": "Buildings",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/buildings15234237",
-     "cited_by": 17,
      "problem": "battery-recycling",
+     "tier": "research",
+     "title": "บทความทบทวนวรรณกรรม (systematic review)",
+     "date": "2026-10-12",
+     "source": "PubMed",
+     "domain": "PubMed",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Energy Efficiency and Decarbonization Strategies in Buildings: A Review of Technologies, Policies, and Future Directions",
-     "date": "2025-10-31",
-     "source": "Applied Sciences",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/app152111660",
-     "cited_by": 40,
      "problem": "battery-recycling",
+     "tier": "news",
+     "title": "ข่าว: บริษัทเปิดตัวบริการใหม่",
+     "date": "2026-10-11",
+     "source": "GDELT",
+     "domain": "GDELT",
+     "doi_or_url": null,
      "status": "corroborating"
     }
    ]
@@ -842,46 +1086,81 @@
    },
    "signals": [
     15,
+    17,
+    18,
+    16,
+    14,
+    16,
+    14,
+    7,
+    7,
+    6,
+    6,
+    5,
+    10,
+    9,
+    12,
+    8,
+    7,
+    10,
+    12,
     15,
     13,
-    12,
-    14,
     13,
     12,
-    7,
-    6,
-    8,
-    5,
-    6,
-    7,
-    9,
-    4,
-    7,
-    8,
-    11,
-    12,
-    10,
-    10,
-    12,
     13,
-    14,
-    18,
-    22,
-    25,
-    29,
-    30,
-    32
+    15,
+    15,
+    19,
+    19,
+    21,
+    24
    ],
-   "indicator": {
-    "indicator": "SE.TER.ENRR",
-    "name": "School enrollment, tertiary (% gross)",
-    "year": 2025,
-    "value": 49.0776442074561,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": null,
-   "evidence": []
+   "plan": null,
+   "evidence": [
+    {
+     "problem": "semiconductor-skills",
+     "tier": "social",
+     "title": "กระทู้บ่นปัญหาที่คนแชร์มาก",
+     "date": "2026-10-20",
+     "source": "X",
+     "domain": "X",
+     "doi_or_url": null,
+     "status": "unverified"
+    },
+    {
+     "problem": "semiconductor-skills",
+     "tier": "news",
+     "title": "ข่าว: บริษัทเปิดตัวบริการใหม่",
+     "date": "2026-10-16",
+     "source": "สำนักข่าว B",
+     "domain": "สำนักข่าว B",
+     "doi_or_url": null,
+     "status": "unverified"
+    },
+    {
+     "problem": "semiconductor-skills",
+     "tier": "news",
+     "title": "ข่าว: บริษัทเปิดตัวบริการใหม่",
+     "date": "2026-10-16",
+     "source": "สำนักข่าว B",
+     "domain": "สำนักข่าว B",
+     "doi_or_url": null,
+     "status": "unverified"
+    },
+    {
+     "problem": "semiconductor-skills",
+     "tier": "research",
+     "title": "งานวิจัยเปรียบเทียบนโยบายใน 5 ประเทศ",
+     "date": "2026-10-14",
+     "source": "PubMed",
+     "domain": "PubMed",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "corroborating"
+    }
+   ]
   },
   {
    "id": "food-loss",
@@ -917,100 +1196,80 @@
     "value": 1400000
    },
    "signals": [
-    9,
-    11,
-    13,
-    13,
-    11,
-    11,
-    12,
-    12,
-    14,
-    14,
-    15,
-    16,
-    18,
-    16,
-    13,
-    11,
-    14,
-    12,
-    11,
-    13,
-    12,
-    9,
-    9,
-    9,
     10,
-    12,
-    13,
-    17,
-    17,
-    15
+    11,
+    10,
+    10,
+    5,
+    4,
+    4,
+    2,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    2,
+    0,
+    0,
+    1,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    2
    ],
-   "indicator": {
-    "indicator": "AG.PRD.FOOD.XD",
-    "name": "Food production index (2014-2016 = 100)",
-    "year": 2024,
-    "value": 98.91,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
-   },
-   "new_papers_12m": 681,
+   "indicator": null,
+   "new_papers_12m": null,
+   "plan": null,
    "evidence": [
     {
-     "tier": "research",
-     "title": "PtdIns(3,5)P2 is an endogenous ligand of STING in innate immune signalling",
-     "date": "2026-02-04",
-     "source": "Nature",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1038/s41586-025-10084-0",
-     "cited_by": 20,
      "problem": "food-loss",
+     "tier": "social",
+     "title": "กระทู้บ่นปัญหาที่คนแชร์มาก",
+     "date": "2026-10-18",
+     "source": "Pantip",
+     "domain": "Pantip",
+     "doi_or_url": null,
+     "status": "unverified"
+    },
+    {
+     "problem": "food-loss",
+     "tier": "official",
+     "title": "ตัวเลขทางการรอบล่าสุด",
+     "date": "2026-10-13",
+     "source": "สำนักงานสถิติแห่งชาติ",
+     "domain": "สำนักงานสถิติแห่งชาติ",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Impact of Partial Gelatinization on Structure, Physicochemical and Enzymatic Digestion Properties of Rice Starch Used for Rice Noodle-Making",
-     "date": "2025-11-12",
-     "source": "Polymers",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/polym17223003",
-     "cited_by": 16,
      "problem": "food-loss",
-     "status": "corroborating"
+     "tier": "research",
+     "title": "บทความทบทวนวรรณกรรม (systematic review)",
+     "date": "2026-10-13",
+     "source": "Crossref",
+     "domain": "Crossref",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
     },
     {
-     "tier": "research",
-     "title": "Plant-Derived Extracellular Vesicles in Cosmetics: Building a Framework for Safety, Efficacy, and Quality",
-     "date": "2025-11-10",
-     "source": "Cosmetics",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/cosmetics12060252",
-     "cited_by": 28,
      "problem": "food-loss",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Ensuring Fish Safety Through Sustainable Aquaculture Practices",
-     "date": "2025-11-05",
-     "source": "Hygiene",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/hygiene5040051",
-     "cited_by": 19,
-     "problem": "food-loss",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "LLMs for Cybersecurity in the Big Data Era: A Comprehensive Review of Applications, Challenges, and Future Directions",
-     "date": "2025-11-04",
-     "source": "Information",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/info16110957",
-     "cited_by": 27,
-     "problem": "food-loss",
+     "tier": "news",
+     "title": "ข่าว: บริษัทเปิดตัวบริการใหม่",
+     "date": "2026-10-11",
+     "source": "GDELT",
+     "domain": "GDELT",
+     "doi_or_url": null,
      "status": "corroborating"
     }
    ]
@@ -1051,101 +1310,370 @@
     "value": 269
    },
    "signals": [
+    10,
+    10,
     11,
     12,
-    14,
-    14,
-    13,
-    12,
-    9,
-    10,
-    10,
-    10,
-    12,
     13,
     14,
-    17,
-    18,
-    21,
-    17,
-    18,
+    15,
+    14,
+    12,
+    13,
+    12,
     16,
+    20,
+    21,
+    20,
+    21,
+    22,
+    20,
     18,
-    17,
+    19,
+    13,
+    14,
+    13,
+    13,
+    16,
     15,
     17,
-    18,
     16,
-    16,
-    11,
-    11,
-    12,
-    12
+    15,
+    13
    ],
-   "indicator": {
-    "indicator": "EN.ATM.PM25.MC.M3",
-    "name": "PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",
-    "year": 2023,
-    "value": 23.4870743016258,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
+   "indicator": null,
+   "new_papers_12m": null,
+   "plan": {
+    "predict": [
+     {
+      "q": "ในหนึ่งปี มีกี่วันที่ค่าฝุ่นเกินมาตรฐาน (พื้นที่ที่หนักที่สุด)",
+      "unit": "วัน",
+      "answer": 96,
+      "source": "ค่าสมมติ ต้องแทนด้วยข้อมูล Air4Thai กรมควบคุมมลพิษ"
+     },
+     {
+      "q": "จุดความร้อนช่วงฤดูฝุ่น อยู่นอกประเทศไทยกี่เปอร์เซ็นต์",
+      "unit": "%",
+      "answer": null,
+      "source": "ยังไม่มีคำตอบ เป็นเควสต์ด้านล่าง (NASA FIRMS / GISTDA)"
+     }
+    ],
+    "why_unsolved": [
+     {
+      "type": "ต้นทุน",
+      "text": "การเผาเป็นวิธีเคลียร์แปลงที่ถูกที่สุดสำหรับเกษตรกร ทางเลือกอื่นต้องจ่ายเพิ่ม"
+     },
+     {
+      "type": "ผลกระทบภายนอก",
+      "text": "คนที่ปล่อยฝุ่นไม่ได้จ่ายค่ารักษาของคนที่ป่วย ต้นทุนจึงตกที่สังคม"
+     },
+     {
+      "type": "เจ้าภาพ",
+      "text": "อำนาจกระจายหลายกระทรวงและท้องถิ่น ไม่มีหน่วยงานที่รับผิดชอบผลลัพธ์ทั้งหมด"
+     },
+     {
+      "type": "ข้ามพรมแดน",
+      "text": "ฝุ่นส่วนหนึ่งมาจากประเทศเพื่อนบ้าน และจากห่วงโซ่อุปทาน เช่น ข้าวโพดอาหารสัตว์"
+     },
+     {
+      "type": "ความสนใจ",
+      "text": "ปัญหาเป็นฤดูกาล พอฝนมาความสนใจก็หาย งบและแผนระยะยาวจึงไม่ต่อเนื่อง"
+     }
+    ],
+    "labor": {
+     "note": "ยังคำนวณตำแหน่งงานที่ขาดไม่ได้ เพราะยังไม่มีอัตรากำลังคนต่อพื้นที่ที่ใช้อ้างอิง",
+     "occupations": [
+      {
+       "code": "ISCO-08 2133",
+       "name": "นักวิชาการสิ่งแวดล้อม"
+      },
+      {
+       "code": "ISCO-08 2132",
+       "name": "ที่ปรึกษาด้านการเกษตรและป่าไม้"
+      },
+      {
+       "code": "ISCO-08 3119",
+       "name": "ช่างเทคนิคด้านวิทยาศาสตร์และวิศวกรรม (เซนเซอร์)"
+      }
+     ],
+     "data_sources": [
+      {
+       "name": "Air4Thai กรมควบคุมมลพิษ",
+       "measures": "ค่าฝุ่นรายชั่วโมงจากสถานีวัด",
+       "status": "todo"
+      },
+      {
+       "name": "NASA FIRMS และ GISTDA",
+       "measures": "จุดความร้อนจากดาวเทียม รายวัน",
+       "status": "todo"
+      },
+      {
+       "name": "ข้อมูลผู้ป่วยโรคทางเดินหายใจ (สธ.)",
+       "measures": "ผลกระทบด้านสุขภาพ",
+       "status": "todo"
+      },
+      {
+       "name": "สัมภาษณ์เกษตรกรที่เผาและเลิกเผา 10 คน",
+       "measures": "ต้นทุนจริงและเหตุผลที่ตัวเลขไม่เห็น",
+       "status": "todo"
+      }
+     ]
+    },
+    "causes": [
+     {
+      "title": "ไม่มีเจ้าภาพกลางที่ตรวจสอบและติดตามผลได้",
+      "approaches": [
+       {
+        "title": "สร้างระบบติดตามสาธารณะที่ใครก็ตรวจสอบได้ ก่อนจะมีหน่วยงานกลาง",
+        "kind": "แก้ต้นเหตุ",
+        "quests": [
+         {
+          "title": "รวบรวมว่าหน่วยงานไหนรับผิดชอบเรื่องฝุ่นส่วนไหน และใช้งบเท่าไร",
+          "who": "บุคคล",
+          "level": "เริ่มต้น",
+          "fields": [
+           "รัฐศาสตร์",
+           "เศรษฐศาสตร์"
+          ],
+          "skill": "ค้นข้อมูล, อ่านเอกสารราชการ",
+          "effort": "1 สัปดาห์",
+          "output": "แผนผังหน่วยงาน อำนาจ และงบประมาณ 1 หน้า",
+          "takers": 0,
+          "done": 0
+         },
+         {
+          "title": "ทำตารางติดตามมาตรการที่รัฐประกาศ ว่าทำแล้วหรือยัง และวัดผลอย่างไร",
+          "who": "บุคคล",
+          "level": "ขั้นกลาง",
+          "fields": [
+           "รัฐศาสตร์",
+           "วิทยาศาสตร์ข้อมูล"
+          ],
+          "skill": "ติดตามข่าว, สเปรดชีต",
+          "effort": "ต่อเนื่อง",
+          "output": "ตารางมาตรการพร้อมสถานะ อัปเดตทุกเดือน",
+          "takers": 1,
+          "done": 0
+         },
+         {
+          "title": "ยื่นขอข้อมูลตาม พ.ร.บ.ข้อมูลข่าวสารของราชการ เรื่องผลการดำเนินงานแก้ฝุ่น",
+          "who": "บุคคล / ภาคประชาสังคม",
+          "level": "ขั้นกลาง",
+          "fields": [
+           "กฎหมาย"
+          ],
+          "skill": "เขียนหนังสือราชการ",
+          "effort": "1–2 เดือน",
+          "output": "ข้อมูลที่ได้รับ หรือบันทึกว่าถูกปฏิเสธเพราะอะไร",
+          "takers": 0,
+          "done": 0
+         },
+         {
+          "title": "ร่างข้อเสนอโครงสร้างหน่วยงานกลางที่เป็นอิสระ โดยเทียบกับต่างประเทศ",
+          "who": "นักวิชาการ / ทีม",
+          "level": "ขั้นสูง",
+          "fields": [
+           "รัฐศาสตร์",
+           "กฎหมาย",
+           "ภาวะผู้นำ"
+          ],
+          "skill": "วิจัยนโยบาย",
+          "effort": "2–3 เดือน",
+          "output": "เอกสารข้อเสนอที่ระบุอำนาจ งบ และตัวชี้วัด",
+          "takers": 0,
+          "done": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "title": "การเผาถูกกว่าทางเลือกอื่นสำหรับเกษตรกร",
+      "approaches": [
+       {
+        "title": "ทำให้การไม่เผาคุ้มกว่า เช่น รับซื้อเศษวัสดุเกษตร",
+        "kind": "แก้ต้นเหตุ",
+        "quests": [
+         {
+          "title": "สัมภาษณ์เกษตรกร 5 คน ว่าเผาเพราะอะไร และต้องได้อะไรถึงจะเลิก",
+          "who": "บุคคล",
+          "level": "เริ่มต้น",
+          "fields": [
+           "จิตวิทยา",
+           "เศรษฐศาสตร์"
+          ],
+          "skill": "สัมภาษณ์",
+          "effort": "1 สัปดาห์",
+          "output": "บันทึกสัมภาษณ์ 5 ชุด พร้อมต้นทุนที่เกษตรกรบอก",
+          "takers": 2,
+          "done": 1
+         },
+         {
+          "title": "คำนวณต้นทุนต่อไร่ ระหว่างเผากับไม่เผา",
+          "who": "บุคคล",
+          "level": "ขั้นกลาง",
+          "fields": [
+           "เศรษฐศาสตร์"
+          ],
+          "skill": "สเปรดชีต, คณิตศาสตร์พื้นฐาน",
+          "effort": "1 สัปดาห์",
+          "output": "ตารางเทียบต้นทุน 3 พืชหลัก",
+          "takers": 0,
+          "done": 0
+         },
+         {
+          "title": "ทดลองโมเดลรับซื้อซังข้าวโพดหรือฟางไปทำเชื้อเพลิงหรือปุ๋ย ใน 1 ตำบล",
+          "who": "บริษัท / สตาร์ทอัพ",
+          "level": "ขั้นสูง",
+          "fields": [
+           "ผู้ประกอบการ",
+           "วิศวกรรม"
+          ],
+          "skill": "ธุรกิจ, โลจิสติกส์",
+          "effort": "1 ฤดูกาล",
+          "output": "ปริมาณที่รับซื้อ และจำนวนไร่ที่เลิกเผา",
+          "takers": 0,
+          "done": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "title": "ข้อมูลฝุ่นและจุดความร้อนกระจัดกระจาย คนทั่วไปเข้าใจยาก",
+      "approaches": [
+       {
+        "title": "รวมข้อมูลเปิดให้เห็นว่าฝุ่นมาจากไหน วันต่อวัน",
+        "kind": "สร้างความสามารถ",
+        "quests": [
+         {
+          "title": "ดาวน์โหลดจุดความร้อนจาก NASA FIRMS ช่วงฤดูฝุ่น แล้วนับว่าอยู่ในและนอกประเทศเท่าไร",
+          "who": "บุคคล",
+          "level": "ขั้นกลาง",
+          "fields": [
+           "วิทยาศาสตร์ข้อมูล"
+          ],
+          "skill": "Python หรือ QGIS เบื้องต้น",
+          "effort": "3 วัน",
+          "output": "ตัวเลขสัดส่วนจุดความร้อนในและนอกประเทศ รายเดือน",
+          "takers": 0,
+          "done": 0
+         },
+         {
+          "title": "ติดตั้งเซนเซอร์ฝุ่นราคาถูกในพื้นที่ที่ไม่มีสถานีวัด",
+          "who": "ชุมชน / โรงเรียน",
+          "level": "ขั้นกลาง",
+          "fields": [
+           "วิศวกรรม",
+           "การศึกษา"
+          ],
+          "skill": "ประกอบอุปกรณ์",
+          "effort": "1 เดือน",
+          "output": "เซนเซอร์ 5 จุดที่ส่งค่าขึ้นเว็บได้",
+          "takers": 0,
+          "done": 0
+         }
+        ]
+       },
+       {
+        "title": "แจ้งเตือนและป้องกันกลุ่มเสี่ยงช่วงฝุ่นหนัก",
+        "kind": "บรรเทาเฉพาะหน้า",
+        "quests": [
+         {
+          "title": "ทำห้องปลอดฝุ่นในศูนย์เด็กเล็กหรือโรงเรียน 1 แห่ง",
+          "who": "ชุมชน / ท้องถิ่น",
+          "level": "เริ่มต้น",
+          "fields": [
+           "วิศวกรรม"
+          ],
+          "skill": "งานช่างเบื้องต้น",
+          "effort": "2 สัปดาห์",
+          "output": "ห้องที่วัดค่าฝุ่นในห้องได้ต่ำกว่ามาตรฐาน",
+          "takers": 3,
+          "done": 2
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "fields": {
+     "รัฐศาสตร์": 3,
+     "เศรษฐศาสตร์": 3,
+     "วิศวกรรม": 3,
+     "วิทยาศาสตร์ข้อมูล": 2,
+     "กฎหมาย": 2,
+     "ภาวะผู้นำ": 1,
+     "จิตวิทยา": 1,
+     "ผู้ประกอบการ": 1,
+     "การศึกษา": 1
+    },
+    "quest_count": 10,
+    "open_quests": 7,
+    "done_quests": 3
    },
-   "new_papers_12m": 112,
    "evidence": [
     {
-     "tier": "research",
-     "title": "Impact of household air pollution on under 5 mortalities and ARI in sub saharan africa: evidence from demographic and health survey 2010–2020",
-     "date": "2026-02-14",
-     "source": "Scientific Reports",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1038/s41598-026-38186-3",
-     "cited_by": 6,
      "problem": "pm25",
+     "tier": "news",
+     "title": "ข่าว: นโยบายหรืองบประมาณใหม่",
+     "date": "2026-10-19",
+     "source": "สำนักข่าว B",
+     "domain": "สำนักข่าว B",
+     "doi_or_url": null,
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Near Real-Time Biomass Burning PM2.5 Emission Estimation to Support Environmental Health Risk Management in Northern Thailand Using FINNv2.5",
-     "date": "2026-01-17",
-     "source": "Toxics",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/toxics14010084",
-     "cited_by": 6,
      "problem": "pm25",
+     "tier": "social",
+     "title": "กระทู้บ่นปัญหาที่คนแชร์มาก",
+     "date": "2026-10-18",
+     "source": "X",
+     "domain": "X",
+     "doi_or_url": null,
+     "status": "unverified"
+    },
+    {
+     "problem": "pm25",
+     "tier": "research",
+     "title": "งานวิจัยเปรียบเทียบนโยบายใน 5 ประเทศ",
+     "date": "2026-10-18",
+     "source": "OpenAlex",
+     "domain": "OpenAlex",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Resourceful utilization of crop residue by smallholder farmers in major grain-producing areas: pathways and countermeasures",
-     "date": "2026-01-12",
-     "source": "Scientific Reports",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1038/s41598-026-35164-7",
-     "cited_by": 5,
      "problem": "pm25",
-     "status": "corroborating"
+     "tier": "social",
+     "title": "กระทู้บ่นปัญหาที่คนแชร์มาก",
+     "date": "2026-10-16",
+     "source": "X",
+     "domain": "X",
+     "doi_or_url": null,
+     "status": "unverified"
     },
     {
-     "tier": "research",
-     "title": "Air Pollution as a Driver of Forest Dynamics: Patterns, Mechanisms, and Knowledge Gaps",
-     "date": "2026-01-08",
-     "source": "Forests",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/f17010081",
-     "cited_by": 9,
      "problem": "pm25",
-     "status": "corroborating"
+     "tier": "research",
+     "title": "งานวิจัยเปรียบเทียบนโยบายใน 5 ประเทศ",
+     "date": "2026-10-12",
+     "source": "Crossref",
+     "domain": "Crossref",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
     },
     {
-     "tier": "research",
-     "title": "The HTAP_v3.2 emission mosaic: merging regional and global monthly emissions (2000–2020) to support air quality modelling and policies",
-     "date": "2025-11-07",
-     "source": "Earth system science data",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.5194/essd-17-5915-2025",
-     "cited_by": 10,
      "problem": "pm25",
-     "status": "corroborating"
+     "tier": "research",
+     "title": "บทความทบทวนวรรณกรรม (systematic review)",
+     "date": "2026-10-11",
+     "source": "OpenAlex",
+     "domain": "OpenAlex",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
     }
    ]
   },
@@ -1185,98 +1713,303 @@
    "signals": [
     13,
     14,
+    12,
+    15,
+    10,
+    14,
+    12,
+    12,
+    12,
     13,
+    13,
+    16,
+    15,
+    17,
+    15,
+    14,
+    15,
+    15,
+    15,
+    17,
+    17,
+    15,
+    14,
+    12,
     13,
     11,
-    11,
-    10,
-    10,
-    13,
-    13,
-    10,
     8,
     8,
-    7,
-    7,
-    4,
-    6,
-    3,
-    1,
-    0,
-    0,
-    2,
-    4,
-    7,
     8,
-    9,
-    7,
-    10,
-    4,
     8
    ],
-   "indicator": {
-    "indicator": "FS.AST.PRVT.GD.ZS",
-    "name": "Domestic credit to private sector (% of GDP)",
-    "year": 2025,
-    "value": 143.080092396055,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
+   "indicator": null,
+   "new_papers_12m": null,
+   "plan": {
+    "predict": [
+     {
+      "q": "ครัวเรือนไทยที่มีหนี้นอกระบบมีประมาณกี่ครัวเรือน",
+      "unit": "ครัวเรือน",
+      "answer": 4100000,
+      "source": "ค่าสมมติ ต้องแทนด้วยข้อมูล สสช. / ธปท."
+     },
+     {
+      "q": "ดอกเบี้ยเงินกู้นอกระบบเฉลี่ยต่อปีกี่เปอร์เซ็นต์",
+      "unit": "%",
+      "answer": null,
+      "source": "ยังไม่มีคำตอบ เป็นเควสต์ด้านล่าง"
+     }
+    ],
+    "why_unsolved": [
+     {
+      "type": "ข้อมูล",
+      "text": "คนรายได้ไม่ประจำไม่มีสลิปเงินเดือนหรือประวัติเครดิต ธนาคารจึงประเมินความเสี่ยงไม่ได้"
+     },
+     {
+      "type": "ต้นทุน",
+      "text": "สินเชื่อก้อนเล็กมีต้นทุนดำเนินการต่อบาทสูง สถาบันการเงินจึงไม่อยากปล่อย"
+     },
+     {
+      "type": "แรงจูงใจ",
+      "text": "เงินกู้นอกระบบได้เงินเร็ว ไม่ต้องมีเอกสาร จึงชนะในวันที่ต้องใช้เงินด่วน"
+     },
+     {
+      "type": "พฤติกรรม",
+      "text": "แรงกดดันทางสังคมและความเครียดจากหนี้ทำให้คนตัดสินใจระยะสั้น ซึ่งเป็นผลของความขาดแคลน ไม่ใช่นิสัย"
+     },
+     {
+      "type": "วงจรหนี้",
+      "text": "หนี้โตเร็วกว่ารายได้มาหลายปี การลดหนี้ทำได้ไม่กี่ทาง (รัดเข็มขัด ปรับโครงสร้างหนี้ อัดฉีดเงิน กระจายรายได้) และทุกทางมีคนต้องรับต้นทุน (กรอบจาก Big Debt Crises ของ Ray Dalio)"
+     }
+    ],
+    "labor": {
+     "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ อัตราที่ปรึกษา 1 คนต่อ 500 ครัวเรือนเป็นสมมติฐานที่ต้องตรวจ",
+     "people_per_worker": 500,
+     "occupations": [
+      {
+       "code": "ISCO-08 2412",
+       "name": "ที่ปรึกษาการเงิน"
+      },
+      {
+       "code": "ISCO-08 3312",
+       "name": "เจ้าหน้าที่สินเชื่อ"
+      }
+     ],
+     "data_sources": [
+      {
+       "name": "การสำรวจภาวะเศรษฐกิจและสังคมของครัวเรือน (สสช.)",
+       "measures": "หนี้ครัวเรือนแยกในระบบและนอกระบบ",
+       "status": "todo"
+      },
+      {
+       "name": "สถิติสินเชื่อครัวเรือน (ธปท.)",
+       "measures": "หนี้ในระบบรายไตรมาส",
+       "status": "todo"
+      },
+      {
+       "name": "สัมภาษณ์ลูกหนี้นอกระบบ 10 คน",
+       "measures": "ดอกเบี้ยจริงและเหตุผลที่ไม่กู้ในระบบ",
+       "status": "todo"
+      }
+     ],
+     "workers_needed": 8200
+    },
+    "causes": [
+     {
+      "title": "ไม่มีประวัติเครดิต จึงกู้ในระบบไม่ได้",
+      "approaches": [
+       {
+        "title": "ใช้ข้อมูลทางเลือก เช่น การจ่ายค่าน้ำไฟตรงเวลา สร้างประวัติเครดิต",
+        "kind": "แก้ต้นเหตุ",
+        "quests": [
+         {
+          "title": "สำรวจว่ามีผู้ให้บริการในไทยรายไหนใช้ข้อมูลทางเลือกปล่อยกู้แล้วบ้าง",
+          "who": "บุคคล",
+          "level": "เริ่มต้น",
+          "fields": [
+           "เศรษฐศาสตร์"
+          ],
+          "skill": "ค้นข้อมูล",
+          "effort": "3 วัน",
+          "output": "รายชื่อผู้ให้บริการ เงื่อนไข และดอกเบี้ย",
+          "takers": 0,
+          "done": 0
+         },
+         {
+          "title": "ทดลองโมเดลประเมินความเสี่ยงจากข้อมูลทางเลือกด้วยข้อมูลเปิด",
+          "who": "บุคคล / นักพัฒนา",
+          "level": "ขั้นสูง",
+          "fields": [
+           "วิทยาศาสตร์ข้อมูล",
+           "เศรษฐศาสตร์"
+          ],
+          "skill": "สถิติ, Python",
+          "effort": "1 เดือน",
+          "output": "โมเดลต้นแบบพร้อมรายงานความแม่นยำและอคติต่อกลุ่มต่างๆ",
+          "takers": 0,
+          "done": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "title": "ต้องใช้เงินด่วน และนอกระบบเร็วกว่า",
+      "approaches": [
+       {
+        "title": "กลุ่มออมทรัพย์ชุมชนที่ให้กู้ฉุกเฉินได้ภายในวันเดียว",
+        "kind": "สร้างความสามารถ",
+        "quests": [
+         {
+          "title": "สัมภาษณ์ลูกหนี้นอกระบบ 5 คน เรื่องดอกเบี้ยจริงและเหตุผลที่เลือก",
+          "who": "บุคคล",
+          "level": "เริ่มต้น",
+          "fields": [
+           "จิตวิทยา",
+           "เศรษฐศาสตร์"
+          ],
+          "skill": "สัมภาษณ์อย่างเคารพความเป็นส่วนตัว",
+          "effort": "1 สัปดาห์",
+          "output": "บันทึกสัมภาษณ์ 5 ชุด (ไม่ระบุตัวตน)",
+          "takers": 1,
+          "done": 0
+         },
+         {
+          "title": "ตั้งกองทุนฉุกเฉินในกลุ่มออมทรัพย์ที่มีอยู่ 1 กลุ่ม",
+          "who": "ชุมชน",
+          "level": "ขั้นกลาง",
+          "fields": [
+           "ภาวะผู้นำ",
+           "เศรษฐศาสตร์"
+          ],
+          "skill": "ประสานงาน, บัญชีพื้นฐาน",
+          "effort": "3 เดือน",
+          "output": "จำนวนสมาชิกที่กู้ฉุกเฉินแทนนอกระบบ",
+          "takers": 0,
+          "done": 0
+         }
+        ]
+       },
+       {
+        "title": "ช่วยเจรจาและรวมหนี้ให้ดอกเบี้ยลดลง",
+        "kind": "บรรเทาเฉพาะหน้า",
+        "quests": [
+         {
+          "title": "ทำคู่มือ 1 หน้า ว่าลูกหนี้นอกระบบไปขอความช่วยเหลือที่ไหนได้บ้าง",
+          "who": "บุคคล",
+          "level": "เริ่มต้น",
+          "fields": [
+           "กฎหมาย",
+           "การศึกษา"
+          ],
+          "skill": "เขียนให้อ่านง่าย",
+          "effort": "2 วัน",
+          "output": "คู่มือที่ตรวจแล้วโดยคนทำงานด้านนี้ 1 คน",
+          "takers": 2,
+          "done": 1
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "title": "ความรู้และทักษะการวางแผนการเงินไม่พอ",
+      "approaches": [
+       {
+        "title": "สอนการเงินผ่านสถานการณ์จริงของผู้เรียน ไม่ใช่ทฤษฎี",
+        "kind": "สร้างความสามารถ",
+        "quests": [
+         {
+          "title": "ออกแบบเวิร์กช็อป 2 ชั่วโมงจากบันทึกสัมภาษณ์ลูกหนี้",
+          "who": "บุคคล / ครู",
+          "level": "ขั้นกลาง",
+          "fields": [
+           "การศึกษา",
+           "จิตวิทยา"
+          ],
+          "skill": "ออกแบบการสอน",
+          "effort": "2 สัปดาห์",
+          "output": "เวิร์กช็อปที่ทดลองสอนจริง 1 รอบ พร้อมผลก่อนและหลัง",
+          "takers": 0,
+          "done": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "fields": {
+     "เศรษฐศาสตร์": 4,
+     "จิตวิทยา": 2,
+     "การศึกษา": 2,
+     "วิทยาศาสตร์ข้อมูล": 1,
+     "ภาวะผู้นำ": 1,
+     "กฎหมาย": 1
+    },
+    "quest_count": 6,
+    "open_quests": 4,
+    "done_quests": 1
    },
-   "new_papers_12m": 234,
    "evidence": [
     {
-     "tier": "research",
-     "title": "Super apps as escrow platforms: An ecosystem analysis of Grab Indonesia",
-     "date": "2026-04-29",
-     "source": "Economy and Society",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1080/03085147.2026.2640746",
-     "cited_by": 5,
      "problem": "household-debt",
+     "tier": "news",
+     "title": "ข่าว: เหตุการณ์ล่าสุดที่เกี่ยวข้อง",
+     "date": "2026-10-20",
+     "source": "สำนักข่าว A",
+     "domain": "สำนักข่าว A",
+     "doi_or_url": null,
+     "status": "disputed",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)",
+     "note": "ตัวเลขในข่าวไม่ตรงกับแหล่งทางการ"
+    },
+    {
+     "problem": "household-debt",
+     "tier": "official",
+     "title": "รายงานประจำปีของหน่วยงานรัฐ",
+     "date": "2026-10-19",
+     "source": "World Bank WDI",
+     "domain": "World Bank WDI",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Family business performance: the role of dynamic capabilities, entrepreneurial orientation, and socioemotional wealth",
-     "date": "2026-02-07",
-     "source": "Review of Managerial Science",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s11846-026-00992-4",
-     "cited_by": 5,
      "problem": "household-debt",
+     "tier": "official",
+     "title": "ตัวเลขทางการรอบล่าสุด",
+     "date": "2026-10-18",
+     "source": "สำนักงานสถิติแห่งชาติ",
+     "domain": "สำนักงานสถิติแห่งชาติ",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Bridging the Energy Gap in ASEAN : Scaling Green Finance and Carbon Markets for a Sustainable Transition",
-     "date": "2026-01-05",
-     "source": "Wiley Interdisciplinary Reviews Energy and Environment",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1002/wene.70020",
-     "cited_by": 10,
      "problem": "household-debt",
+     "tier": "official",
+     "title": "ตัวเลขทางการรอบล่าสุด",
+     "date": "2026-10-16",
+     "source": "World Bank WDI",
+     "domain": "World Bank WDI",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "From Access to Impact: How Digital Financial Inclusion Drives Sustainable Development",
-     "date": "2025-12-02",
-     "source": "Sustainability",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/su172310799",
-     "cited_by": 10,
      "problem": "household-debt",
+     "tier": "news",
+     "title": "ข่าว: นโยบายหรืองบประมาณใหม่",
+     "date": "2026-10-12",
+     "source": "สำนักข่าว B",
+     "domain": "สำนักข่าว B",
+     "doi_or_url": null,
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "The role of financial inclusion in reducing household poverty: insights from Eastern Indonesia",
-     "date": "2025-11-20",
-     "source": "Cogent Economics & Finance",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1080/23322039.2025.2588925",
-     "cited_by": 7,
      "problem": "household-debt",
+     "tier": "research",
+     "title": "งานวิจัยเปรียบเทียบนโยบายใน 5 ประเทศ",
+     "date": "2026-10-11",
+     "source": "OpenAlex",
+     "domain": "OpenAlex",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
      "status": "corroborating"
     }
    ]
@@ -1314,101 +2047,93 @@
     "value": 60000
    },
    "signals": [
-    11,
-    10,
-    11,
-    6,
-    10,
-    9,
-    11,
+    18,
+    18,
     12,
-    10,
     11,
-    10,
-    6,
-    6,
-    8,
-    6,
-    4,
-    8,
-    6,
-    4,
-    2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    2,
-    5
+    15,
+    18,
+    19,
+    19,
+    20,
+    21,
+    20,
+    17,
+    18,
+    20,
+    23,
+    19,
+    20,
+    21,
+    22,
+    19,
+    19,
+    21,
+    22,
+    23,
+    21,
+    24,
+    27,
+    25,
+    25,
+    22
    ],
-   "indicator": {
-    "indicator": "IT.NET.USER.ZS",
-    "name": "Individuals using the Internet (% of population)",
-    "year": 2024,
-    "value": 90.86718789,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
-   },
-   "new_papers_12m": 40,
+   "indicator": null,
+   "new_papers_12m": null,
+   "plan": null,
    "evidence": [
     {
-     "tier": "research",
-     "title": "Regulating the Crypto-Laundering Chain: A Comparative Study of Scam Compounds and Money Mule Mechanisms Within Criminal Networks",
-     "date": "2026-04-21",
-     "source": "Risks",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/risks14040096",
-     "cited_by": 4,
      "problem": "online-fraud",
+     "tier": "news",
+     "title": "ข่าว: เหตุการณ์ล่าสุดที่เกี่ยวข้อง",
+     "date": "2026-10-20",
+     "source": "GDELT",
+     "domain": "GDELT",
+     "doi_or_url": null,
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Evolutionary fraud, the global scamming ecosystem and a typology of actors",
-     "date": "2026-02-25",
-     "source": "International journal of law, crime and justice",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1016/j.ijlcj.2026.100825",
-     "cited_by": 8,
      "problem": "online-fraud",
+     "tier": "news",
+     "title": "ข่าว: เหตุการณ์ล่าสุดที่เกี่ยวข้อง",
+     "date": "2026-10-19",
+     "source": "สำนักข่าว B",
+     "domain": "สำนักข่าว B",
+     "doi_or_url": null,
+     "status": "disputed",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)",
+     "note": "ตัวเลขในข่าวไม่ตรงกับแหล่งทางการ"
+    },
+    {
+     "problem": "online-fraud",
+     "tier": "research",
+     "title": "บทความทบทวนวรรณกรรม (systematic review)",
+     "date": "2026-10-15",
+     "source": "OpenAlex",
+     "domain": "OpenAlex",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
+    },
+    {
+     "problem": "online-fraud",
+     "tier": "research",
+     "title": "งานวิจัยเปรียบเทียบนโยบายใน 5 ประเทศ",
+     "date": "2026-10-13",
+     "source": "OpenAlex",
+     "domain": "OpenAlex",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "What Do We Know About Human Trafficking and Scam Compounds in Southeast Asia (2020–2025)? A Qualitative Meta-Synthesis of Coercive Deviant Enterprises",
-     "date": "2026-01-06",
-     "source": "Deviant Behavior",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1080/01639625.2025.2604138",
-     "cited_by": 20,
      "problem": "online-fraud",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "AI-Empowered Responsive Regulation for Preventing Future Crimes: An Empirical Inquiry into the Regulatory Pyramid to Combat Future Crimes in China and Southeast Asia",
-     "date": "2025-11-28",
-     "source": "Asian Journal of Criminology",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s11417-025-09477-x",
-     "cited_by": 9,
-     "problem": "online-fraud",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Nigerian confraternities and mass cross-border fraud",
-     "date": "2025-11-01",
-     "source": "Trends in Organized Crime",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s12117-025-09576-2",
-     "cited_by": 4,
-     "problem": "online-fraud",
-     "status": "corroborating"
+     "tier": "social",
+     "title": "กระทู้บ่นปัญหาที่คนแชร์มาก",
+     "date": "2026-10-12",
+     "source": "X",
+     "domain": "X",
+     "doi_or_url": null,
+     "status": "unverified"
     }
    ]
   },
@@ -1445,101 +2170,83 @@
     "value": 12000
    },
    "signals": [
+    14,
     15,
-    16,
+    17,
     18,
-    22,
-    24,
-    24,
+    18,
+    16,
     21,
-    24,
     25,
-    23,
-    28,
     29,
-    30,
-    26,
-    25,
-    25,
-    24,
-    24,
-    24,
-    25,
-    27,
-    24,
-    23,
-    27,
-    28,
-    25,
-    26,
-    29,
-    30,
-    30
+    31,
+    32,
+    33,
+    35,
+    38,
+    41,
+    44,
+    40,
+    40,
+    36,
+    37,
+    34,
+    38,
+    38,
+    37,
+    38,
+    40,
+    39,
+    43,
+    43,
+    42
    ],
-   "indicator": {
-    "indicator": "EG.IMP.CONS.ZS",
-    "name": "Energy imports, net (% of energy use)",
-    "year": 2024,
-    "value": 57.2704702560609,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
-   },
-   "new_papers_12m": 6380,
+   "indicator": null,
+   "new_papers_12m": null,
+   "plan": null,
    "evidence": [
     {
-     "tier": "research",
-     "title": "The global transmission of U.S. monetary policy",
-     "date": "2026-04-03",
-     "source": "Journal of International Economics",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1016/j.jinteco.2026.104259",
-     "cited_by": 77,
      "problem": "energy-security",
+     "tier": "news",
+     "title": "ข่าว: บริษัทเปิดตัวบริการใหม่",
+     "date": "2026-10-18",
+     "source": "สำนักข่าว A",
+     "domain": "สำนักข่าว A",
+     "doi_or_url": null,
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "The Valorization of Agrifood Byproducts and Waste to Advance the Sustainable Development Goals: Current State and New Perspectives",
-     "date": "2026-02-24",
-     "source": "Sustainability",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/su18052165",
-     "cited_by": 42,
      "problem": "energy-security",
-     "status": "corroborating"
+     "tier": "official",
+     "title": "ตัวเลขทางการรอบล่าสุด",
+     "date": "2026-10-18",
+     "source": "World Bank WDI",
+     "domain": "World Bank WDI",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
     },
     {
-     "tier": "research",
-     "title": "Decoupling economic growth and CO2 emissions: a geopolitical comparison of the EU and GCC energy transitions",
-     "date": "2026-01-22",
-     "source": "Quality & Quantity",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s11135-026-02572-w",
-     "cited_by": 38,
      "problem": "energy-security",
-     "status": "corroborating"
+     "tier": "research",
+     "title": "บทความทบทวนวรรณกรรม (systematic review)",
+     "date": "2026-10-17",
+     "source": "PubMed",
+     "domain": "PubMed",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
     },
     {
-     "tier": "research",
-     "title": "Impact of drought on global food security by 2050",
-     "date": "2025-12-24",
-     "source": "Nature Communications",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1038/s41467-025-67862-7",
-     "cited_by": 37,
      "problem": "energy-security",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Supply chain risks in agri-food systems: a comprehensive review of economic vulnerabilities and mitigation approaches",
-     "date": "2025-11-18",
-     "source": "Frontiers in Sustainable Food Systems",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3389/fsufs.2025.1649834",
-     "cited_by": 25,
-     "problem": "energy-security",
-     "status": "corroborating"
+     "tier": "official",
+     "title": "ตัวเลขทางการรอบล่าสุด",
+     "date": "2026-10-15",
+     "source": "สำนักงานสถิติแห่งชาติ",
+     "domain": "สำนักงานสถิติแห่งชาติ",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
     }
    ]
   },
@@ -1575,100 +2282,81 @@
     "value": 4600
    },
    "signals": [
+    12,
+    10,
+    9,
+    11,
+    13,
+    13,
+    15,
+    16,
+    14,
     11,
     10,
+    12,
     10,
-    13,
-    9,
+    11,
+    11,
+    6,
+    5,
+    7,
     8,
     7,
     8,
-    10,
-    10,
-    9,
-    13,
-    14,
-    13,
-    13,
-    16,
+    8,
+    12,
     12,
     9,
-    9,
+    10,
+    10,
     8,
     10,
-    13,
-    11,
-    11,
-    9,
-    6,
-    6,
-    8,
-    9,
-    13
+    10
    ],
-   "indicator": {
-    "indicator": "SH.MED.PHYS.ZS",
-    "name": "Physicians (per 1,000 people)",
-    "year": 2021,
-    "value": 0.541,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
-   },
-   "new_papers_12m": 88,
+   "indicator": null,
+   "new_papers_12m": null,
+   "plan": null,
    "evidence": [
     {
-     "tier": "research",
-     "title": "Perspectives of Frontline Clinicians and End-Line Users on Smartphone-Based Photography for Assessing Traumatic Dental Injuries: Focus Group Interview Study and Thematic Analysis",
-     "date": "2026-01-26",
-     "source": "JMIR Human Factors",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.2196/82668",
-     "cited_by": 3,
      "problem": "rural-doctors",
+     "tier": "news",
+     "title": "ข่าว: เหตุการณ์ล่าสุดที่เกี่ยวข้อง",
+     "date": "2026-10-16",
+     "source": "GDELT",
+     "domain": "GDELT",
+     "doi_or_url": null,
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "From Local to Global Perspective in AI-Based Digital Twins in Healthcare",
-     "date": "2025-12-21",
-     "source": "Applied Sciences",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/app16010083",
-     "cited_by": 4,
      "problem": "rural-doctors",
-     "status": "corroborating"
+     "tier": "official",
+     "title": "รายงานประจำปีของหน่วยงานรัฐ",
+     "date": "2026-10-12",
+     "source": "สำนักงานสถิติแห่งชาติ",
+     "domain": "สำนักงานสถิติแห่งชาติ",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
     },
     {
-     "tier": "research",
-     "title": "Mobile Health Clinics and Telehealth Outreach in Thailand: A Focus on Elderly Care and NCDs",
-     "date": "2025-12-01",
-     "source": "Journal of Multidisciplinary Healthcare",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.2147/jmdh.s559594",
-     "cited_by": 4,
      "problem": "rural-doctors",
-     "status": "corroborating"
+     "tier": "official",
+     "title": "ตัวเลขทางการรอบล่าสุด",
+     "date": "2026-10-12",
+     "source": "สำนักงานสถิติแห่งชาติ",
+     "domain": "สำนักงานสถิติแห่งชาติ",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
     },
     {
-     "tier": "research",
-     "title": "Effectiveness of a mobile cardiotocography device (iCTG) in improving antenatal care and detecting abnormal fetal heart rate during late pregnancy: an implementation study in Tanzania",
-     "date": "2025-11-26",
-     "source": "BMC Public Health",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1186/s12889-025-25383-4",
-     "cited_by": 4,
      "problem": "rural-doctors",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Time toxicity during palliative chemotherapy for advanced malignancies: a prospective study",
-     "date": "2025-10-30",
-     "source": "BMJ Supportive & Palliative Care",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1136/spcare-2025-005738",
-     "cited_by": 4,
-     "problem": "rural-doctors",
+     "tier": "news",
+     "title": "ข่าว: เหตุการณ์ล่าสุดที่เกี่ยวข้อง",
+     "date": "2026-10-11",
+     "source": "สำนักข่าว A",
+     "domain": "สำนักข่าว A",
+     "doi_or_url": null,
      "status": "corroborating"
     }
    ]
@@ -1705,94 +2393,71 @@
     "value": 150000
    },
    "signals": [
-    7,
-    6,
-    7,
-    6,
-    7,
-    7,
+    10,
+    10,
+    8,
+    9,
     7,
     8,
+    8,
     7,
-    7,
-    3,
-    2,
-    2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    1,
-    2,
-    1,
-    1,
-    2,
-    3,
-    2,
-    1,
-    0,
-    0,
-    0
+    8,
+    6,
+    8,
+    9,
+    10,
+    14,
+    15,
+    15,
+    17,
+    16,
+    19,
+    20,
+    22,
+    25,
+    26,
+    27,
+    27,
+    29,
+    28,
+    29,
+    28,
+    30
    ],
    "indicator": null,
-   "new_papers_12m": 372,
+   "new_papers_12m": null,
+   "plan": null,
    "evidence": [
     {
-     "tier": "research",
-     "title": "Biological synergies for heavy metal bioremediation across microbial, algal, and phytoremediation perspectives",
-     "date": "2026-03-02",
-     "source": "Discover Green Chemistry",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s44509-026-00003-5",
-     "cited_by": 11,
      "problem": "groundwater",
+     "tier": "news",
+     "title": "ข่าว: เหตุการณ์ล่าสุดที่เกี่ยวข้อง",
+     "date": "2026-10-14",
+     "source": "GDELT",
+     "domain": "GDELT",
+     "doi_or_url": null,
+     "status": "unverified"
+    },
+    {
+     "problem": "groundwater",
+     "tier": "official",
+     "title": "รายงานประจำปีของหน่วยงานรัฐ",
+     "date": "2026-10-13",
+     "source": "UN SDG Database",
+     "domain": "UN SDG Database",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Biomagnification of Potentially Toxic Elements and Metal-Based Nanomaterials in Food",
-     "date": "2026-02-18",
-     "source": "Environments",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/environments13020116",
-     "cited_by": 10,
      "problem": "groundwater",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Biochar co-modification by magnetization and mineral impregnation: a step towards improved agri-environmental applications",
-     "date": "2026-02-04",
-     "source": "Biochar",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s42773-025-00536-1",
-     "cited_by": 10,
-     "problem": "groundwater",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Organic Amendments for Sustainable Agriculture: Effects on Soil Function, Crop Productivity and Carbon Sequestration Under Variable Contexts",
-     "date": "2026-01-19",
-     "source": "C – Journal of Carbon Research",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/c12010007",
-     "cited_by": 18,
-     "problem": "groundwater",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Navigating Water Scarcity for Global Climate Change and Ramifications",
-     "date": "2025-12-20",
-     "source": "World Water Policy",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1002/wwp2.70055",
-     "cited_by": 14,
-     "problem": "groundwater",
-     "status": "corroborating"
+     "tier": "official",
+     "title": "รายงานประจำปีของหน่วยงานรัฐ",
+     "date": "2026-10-13",
+     "source": "UN SDG Database",
+     "domain": "UN SDG Database",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
     }
    ]
   },
@@ -1831,101 +2496,81 @@
     "value": 7200000
    },
    "signals": [
+    12,
     11,
-    11,
-    16,
-    17,
-    14,
-    14,
-    14,
+    13,
     15,
-    17,
+    16,
+    20,
+    20,
     18,
-    22,
-    23,
-    23,
-    24,
-    23,
-    23,
-    19,
-    23,
-    26,
-    27,
-    30,
-    34,
-    34,
-    33,
-    33,
-    33,
-    32,
-    30,
-    29,
-    32
+    15,
+    15,
+    11,
+    12,
+    17,
+    15,
+    15,
+    15,
+    14,
+    17,
+    15,
+    18,
+    18,
+    17,
+    17,
+    20,
+    16,
+    14,
+    14,
+    12,
+    11,
+    9
    ],
-   "indicator": {
-    "indicator": "ER.H2O.FWST.ZS",
-    "name": "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources",
-    "year": 2022,
-    "value": 23.01393518,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
-   },
-   "new_papers_12m": 72,
+   "indicator": null,
+   "new_papers_12m": null,
+   "plan": null,
    "evidence": [
     {
-     "tier": "research",
-     "title": "Soil Types and Degradation Pathways in Saudi Arabia: A Geospatial Approach for Sustainable Land Management",
-     "date": "2026-02-20",
-     "source": "Sustainability",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/su18042109",
-     "cited_by": 5,
      "problem": "flood-water",
+     "tier": "official",
+     "title": "รายงานประจำปีของหน่วยงานรัฐ",
+     "date": "2026-10-20",
+     "source": "สำนักงานสถิติแห่งชาติ",
+     "domain": "สำนักงานสถิติแห่งชาติ",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
+     "status": "verified",
+     "reviewed_by": "ทีมตรวจสอบ (ตัวอย่าง)"
+    },
+    {
+     "problem": "flood-water",
+     "tier": "official",
+     "title": "รายงานประจำปีของหน่วยงานรัฐ",
+     "date": "2026-10-18",
+     "source": "World Bank WDI",
+     "domain": "World Bank WDI",
+     "doi_or_url": "https://doi.org/10.xxxx/sample",
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Mitigation Potential of Greenhouse Gas Emissions Through Nitrogen‐Water Management Optimization in Major Asian Rice Regions",
-     "date": "2025-12-01",
-     "source": "Earth s Future",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1029/2025ef006740",
-     "cited_by": 4,
      "problem": "flood-water",
+     "tier": "news",
+     "title": "ข่าว: เหตุการณ์ล่าสุดที่เกี่ยวข้อง",
+     "date": "2026-10-16",
+     "source": "GDELT",
+     "domain": "GDELT",
+     "doi_or_url": null,
      "status": "corroborating"
     },
     {
-     "tier": "research",
-     "title": "Assessing natural and human-induced drivers of groundwater quality and health risks in coastal deltas: advancing SDG 3, SDG 6, SDG 13, and SDG 15",
-     "date": "2025-11-26",
-     "source": "Applied Water Science",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s13201-025-02648-2",
-     "cited_by": 9,
      "problem": "flood-water",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Physiological indicators drive climate-smart and sustainable AWD irrigation in rice systems",
-     "date": "2025-11-12",
-     "source": "Scientific Reports",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1038/s41598-025-23184-8",
-     "cited_by": 6,
-     "problem": "flood-water",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Deep Reinforcement Learning for Optimized Reservoir Operation and Flood Risk Mitigation",
-     "date": "2025-11-11",
-     "source": "Water",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/w17223226",
-     "cited_by": 4,
-     "problem": "flood-water",
-     "status": "corroborating"
+     "tier": "social",
+     "title": "กระทู้บ่นปัญหาที่คนแชร์มาก",
+     "date": "2026-10-16",
+     "source": "Pantip",
+     "domain": "Pantip",
+     "doi_or_url": null,
+     "status": "unverified"
     }
    ]
   }
