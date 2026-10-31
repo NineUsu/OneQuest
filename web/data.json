@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-30T09:00+00:00",
+ "generated_at": "2026-10-31T02:13+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-01",
   "2026-10-02",
   "2026-10-03",
   "2026-10-04",
@@ -43,7 +42,8 @@
   "2026-10-27",
   "2026-10-28",
   "2026-10-29",
-  "2026-10-30"
+  "2026-10-30",
+  "2026-10-31"
  ],
  "daily_signals": {
   "supply": [
@@ -326,7 +326,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
    },
-   "new_papers_12m": 172,
+   "new_papers_12m": 171,
    "plan": {
     "labor": {
      "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้",
@@ -671,7 +671,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 83879,
+   "new_papers_12m": 83981,
    "plan": null,
    "evidence": [
     {
@@ -703,7 +703,7 @@
      "source": "Artificial Intelligence Review",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 181,
+     "cited_by": 182,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -714,7 +714,7 @@
      "source": "Phytochemistry Reviews",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11101-025-10194-7",
-     "cited_by": 177,
+     "cited_by": 180,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -725,7 +725,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 463,
+     "cited_by": 465,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -804,7 +804,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1519,
+   "new_papers_12m": 1517,
    "plan": null,
    "evidence": [
     {
@@ -858,7 +858,7 @@
      "source": "Merits",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/merits5040023",
-     "cited_by": 31,
+     "cited_by": 33,
      "problem": "ai-jobs",
      "status": "corroborating"
     }
@@ -937,7 +937,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
    },
-   "new_papers_12m": 679,
+   "new_papers_12m": 682,
    "plan": null,
    "evidence": [
     {
@@ -975,23 +975,23 @@
     },
     {
      "tier": "research",
+     "title": "From Access to Impact: How Digital Financial Inclusion Drives Sustainable Development",
+     "date": "2025-12-02",
+     "source": "Sustainability",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/su172310799",
+     "cited_by": 10,
+     "problem": "sme-credit",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
      "title": "Economic Growth and Sustainable Development: The Role of Financial Inclusion, FinTech , Eco‐Innovation, and Economic Complexity",
      "date": "2025-11-06",
      "source": "Sustainable Development",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/sd.70322",
      "cited_by": 15,
-     "problem": "sme-credit",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "The Role of Green Finance in Investing in Environmentally Friendly Technologies: Risks and Returns",
-     "date": "2025-10-30",
-     "source": "Sustainability",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/su17219652",
-     "cited_by": 12,
      "problem": "sme-credit",
      "status": "corroborating"
     }
@@ -1070,7 +1070,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
    },
-   "new_papers_12m": 190,
+   "new_papers_12m": 189,
    "plan": null,
    "evidence": [
     {
@@ -1203,7 +1203,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 573,
+   "new_papers_12m": 567,
    "plan": null,
    "evidence": [
     {
@@ -1252,12 +1252,12 @@
     },
     {
      "tier": "research",
-     "title": "Balancing Innovation and Control: The European Union AI Act in an Era of Global Uncertainty",
-     "date": "2025-10-30",
-     "source": "JMIR AI",
+     "title": "Analysis of advancing paradigms of smart grid innovations, applications, challenges, future trends and strategic implementations",
+     "date": "2025-11-18",
+     "source": "Discover Applied Sciences",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.2196/75527",
-     "cited_by": 20,
+     "doi_or_url": "https://doi.org/10.1007/s42452-025-07905-2",
+     "cited_by": 8,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     }
@@ -1336,7 +1336,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
    },
-   "new_papers_12m": 681,
+   "new_papers_12m": 685,
    "plan": null,
    "evidence": [
     {
@@ -1357,7 +1357,7 @@
      "source": "Polymers",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/polym17223003",
-     "cited_by": 16,
+     "cited_by": 17,
      "problem": "food-loss",
      "status": "corroborating"
     },
@@ -1390,7 +1390,7 @@
      "source": "Information",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/info16110957",
-     "cited_by": 27,
+     "cited_by": 28,
      "problem": "food-loss",
      "status": "corroborating"
     }
@@ -1471,7 +1471,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
    },
-   "new_papers_12m": 112,
+   "new_papers_12m": 113,
    "plan": {
     "predict": [
      {
@@ -1872,7 +1872,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 234,
+   "new_papers_12m": 235,
    "plan": {
     "predict": [
      {
@@ -2208,7 +2208,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
    },
-   "new_papers_12m": 40,
+   "new_papers_12m": 41,
    "plan": null,
    "evidence": [
     {
@@ -2340,7 +2340,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6380,
+   "new_papers_12m": 6409,
    "plan": null,
    "evidence": [
     {
@@ -2350,7 +2350,7 @@
      "source": "Journal of International Economics",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.jinteco.2026.104259",
-     "cited_by": 77,
+     "cited_by": 78,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2383,7 +2383,7 @@
      "source": "Nature Communications",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41467-025-67862-7",
-     "cited_by": 37,
+     "cited_by": 38,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2471,9 +2471,20 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
    },
-   "new_papers_12m": 88,
+   "new_papers_12m": 87,
    "plan": null,
    "evidence": [
+    {
+     "tier": "research",
+     "title": "One Network–One Nation–One Health India’s Strategic Blueprint for Resilient, Cross-Sectoral Health Systems",
+     "date": "2026-02-02",
+     "source": "Aerobiology",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/aerobiology4010005",
+     "cited_by": 2,
+     "problem": "rural-doctors",
+     "status": "corroborating"
+    },
     {
      "tier": "research",
      "title": "Perspectives of Frontline Clinicians and End-Line Users on Smartphone-Based Photography for Assessing Traumatic Dental Injuries: Focus Group Interview Study and Thematic Analysis",
@@ -2514,17 +2525,6 @@
      "source": "BMC Public Health",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1186/s12889-025-25383-4",
-     "cited_by": 4,
-     "problem": "rural-doctors",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Time toxicity during palliative chemotherapy for advanced malignancies: a prospective study",
-     "date": "2025-10-30",
-     "source": "BMJ Supportive & Palliative Care",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1136/spcare-2025-005738",
      "cited_by": 4,
      "problem": "rural-doctors",
      "status": "corroborating"
@@ -2595,7 +2595,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 372,
+   "new_papers_12m": 373,
    "plan": null,
    "evidence": [
     {
@@ -2729,7 +2729,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
    },
-   "new_papers_12m": 72,
+   "new_papers_12m": 74,
    "plan": null,
    "evidence": [
     {
@@ -2761,7 +2761,7 @@
      "source": "Applied Water Science",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s13201-025-02648-2",
-     "cited_by": 9,
+     "cited_by": 10,
      "problem": "flood-water",
      "status": "corroborating"
     },
@@ -2783,7 +2783,7 @@
      "source": "Water",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/w17223226",
-     "cited_by": 4,
+     "cited_by": 5,
      "problem": "flood-water",
      "status": "corroborating"
     }
